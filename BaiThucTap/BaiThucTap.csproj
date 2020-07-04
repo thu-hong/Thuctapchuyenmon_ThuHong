@@ -133,6 +133,12 @@
     <Compile Include="QLNhanVien.Designer.cs">
       <DependentUpon>QLNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyTrangSuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyTrangSuc.Designer.cs">
+      <DependentUpon>QuanLyTrangSuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Quyen.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
