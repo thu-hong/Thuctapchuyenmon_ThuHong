@@ -17,5 +17,6 @@ namespace BaiThucTap
         public string MaHD { get; set; }
         public string MaTS { get; set; }
         public Nullable<int> SoLuongBan { get; set; }
+        public string TenTS { get; set; }
     }
 }

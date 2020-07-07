@@ -10,15 +10,13 @@
 namespace BaiThucTap
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class HoaDon
+    public partial class sp_helpdiagrams_Result
     {
-        public string MaHD { get; set; }
-        public Nullable<System.DateTime> TGLap { get; set; }
-        public Nullable<double> TongTien { get; set; }
-        public string UserName { get; set; }
-        public Nullable<bool> TrangThai { get; set; }
-        public string MaUD { get; set; }
+        public string Database { get; set; }
+        public string Name { get; set; }
+        public int ID { get; set; }
+        public string Owner { get; set; }
+        public int OwnerID { get; set; }
     }
 }

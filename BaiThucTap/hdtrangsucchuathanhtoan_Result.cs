@@ -10,9 +10,8 @@
 namespace BaiThucTap
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class HoaDon
+    public partial class hdtrangsucchuathanhtoan_Result
     {
         public string MaHD { get; set; }
         public Nullable<System.DateTime> TGLap { get; set; }

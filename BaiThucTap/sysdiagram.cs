@@ -12,13 +12,12 @@ namespace BaiThucTap
     using System;
     using System.Collections.Generic;
     
-    public partial class HoaDon
+    public partial class sysdiagram
     {
-        public string MaHD { get; set; }
-        public Nullable<System.DateTime> TGLap { get; set; }
-        public Nullable<double> TongTien { get; set; }
-        public string UserName { get; set; }
-        public Nullable<bool> TrangThai { get; set; }
-        public string MaUD { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

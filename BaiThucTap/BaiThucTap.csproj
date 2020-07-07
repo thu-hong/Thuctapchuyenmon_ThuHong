@@ -85,7 +85,27 @@
     <Compile Include="DangNhap.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="DataSetTrangSuc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetTrangSuc.xsd</DependentUpon>
+    </Compile>
     <Compile Include="dsnhanvien_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrangSuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmTrangSuc.Designer.cs">
+      <DependentUpon>frmTrangSuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="getmahd1_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getmahd2_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hdtrangsucchuathanhtoan_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="HoaDon.cs">
@@ -94,7 +114,19 @@
     <Compile Include="KhachHang.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="LoaiT.cs">
+    <Compile Include="LoadHinhTrangSuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadHinhTrangSuc.Designer.cs">
+      <DependentUpon>LoadHinhTrangSuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loadthu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loadthu.Designer.cs">
+      <DependentUpon>loadthu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiTrangSuc.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
@@ -142,6 +174,15 @@
     <Compile Include="Quyen.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Thang.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -168,6 +209,15 @@
     <Compile Include="UuDai.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmTrangSuc.resx">
+      <DependentUpon>frmTrangSuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadHinhTrangSuc.resx">
+      <DependentUpon>LoadHinhTrangSuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loadthu.resx">
+      <DependentUpon>loadthu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QLKhachHang.resx">
       <DependentUpon>QLKhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +242,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DataSetTrangSuc.xsc">
+      <DependentUpon>DataSetTrangSuc.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTrangSuc.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTrangSuc.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetTrangSuc.xss">
+      <DependentUpon>DataSetTrangSuc.xsd</DependentUpon>
+    </None>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>

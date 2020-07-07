@@ -12,7 +12,7 @@ namespace BaiThucTap
     using System;
     using System.Collections.Generic;
     
-    public partial class LoaiT
+    public partial class LoaiTrangSuc
     {
         public string MaLoai { get; set; }
         public string TenLoai { get; set; }

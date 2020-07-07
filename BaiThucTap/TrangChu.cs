@@ -1,8 +1,10 @@
 ﻿using DevExpress.XtraBars.Navigation.Accessible;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -97,6 +99,37 @@ namespace BaiThucTap
                 MessageBox.Show("Bạn Không có quyền");
                 return;
             }
+        }
+
+        private void hinhFb_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.facebook.com/");
+        }
+
+        private void hinhZalo_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://id.zalo.me/");
+        }
+
+        public Panel pannelcotrol
+        {
+            get { return panelcontrol; }
+            set { panelcontrol = value; }
+        }
+        private void QuanLyTrangSuc_Click(object sender, EventArgs e)
+        {
+            //frmTrangSuc f1 = new frmTrangSuc();
+            //f1.Dock = DockStyle.Fill;
+            //panelcontrol.Controls.Add(f1);
+            loadthu f1 = new loadthu();
+            f1.ShowDialog();
+
+        }
+
+        private void QuanLyKhachHang_Click(object sender, EventArgs e)
+        {
+            QLKhachHang f2 = new QLKhachHang();
+            f2.ShowDialog();
         }
     }
 }

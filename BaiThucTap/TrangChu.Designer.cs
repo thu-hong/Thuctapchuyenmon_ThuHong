@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelcontrol = new System.Windows.Forms.Panel();
             this.lbMaNV = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -51,12 +52,16 @@
             this.DanhThu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.LienHe = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.LienHeGmail = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.hinhFb = new System.Windows.Forms.PictureBox();
+            this.hinhZalo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hinhFb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hinhZalo)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -72,6 +77,7 @@
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.panelcontrol);
             this.panel1.Controls.Add(this.lbMaNV);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -80,15 +86,24 @@
             this.panel1.Size = new System.Drawing.Size(1229, 118);
             this.panel1.TabIndex = 0;
             // 
+            // panelcontrol
+            // 
+            this.panelcontrol.Location = new System.Drawing.Point(186, 109);
+            this.panelcontrol.Name = "panelcontrol";
+            this.panelcontrol.Size = new System.Drawing.Size(1043, 419);
+            this.panelcontrol.TabIndex = 6;
+            // 
             // lbMaNV
             // 
             this.lbMaNV.AutoSize = true;
+            this.lbMaNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lbMaNV.ForeColor = System.Drawing.Color.Fuchsia;
             this.lbMaNV.Image = ((System.Drawing.Image)(resources.GetObject("lbMaNV.Image")));
             this.lbMaNV.Location = new System.Drawing.Point(201, 3);
             this.lbMaNV.Name = "lbMaNV";
-            this.lbMaNV.Size = new System.Drawing.Size(37, 13);
+            this.lbMaNV.Size = new System.Drawing.Size(36, 13);
             this.lbMaNV.TabIndex = 2;
-            this.lbMaNV.Text = "MaNV";
+            this.lbMaNV.Text = "mã nv";
             // 
             // pictureBox3
             // 
@@ -148,12 +163,14 @@
             this.QuanLyTrangSuc.Name = "QuanLyTrangSuc";
             this.QuanLyTrangSuc.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.QuanLyTrangSuc.Text = "Trang Sức";
+            this.QuanLyTrangSuc.Click += new System.EventHandler(this.QuanLyTrangSuc_Click);
             // 
             // QuanLyKhachHang
             // 
             this.QuanLyKhachHang.Name = "QuanLyKhachHang";
             this.QuanLyKhachHang.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.QuanLyKhachHang.Text = "Khách Hàng";
+            this.QuanLyKhachHang.Click += new System.EventHandler(this.QuanLyKhachHang_Click);
             // 
             // QuanLyHoaDon
             // 
@@ -244,15 +261,40 @@
             this.LienHeGmail.Text = "Gmail";
             this.LienHeGmail.Click += new System.EventHandler(this.LienHeGmail_Click);
             // 
+            // hinhFb
+            // 
+            this.hinhFb.Image = ((System.Drawing.Image)(resources.GetObject("hinhFb.Image")));
+            this.hinhFb.Location = new System.Drawing.Point(207, 113);
+            this.hinhFb.Name = "hinhFb";
+            this.hinhFb.Size = new System.Drawing.Size(51, 46);
+            this.hinhFb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.hinhFb.TabIndex = 4;
+            this.hinhFb.TabStop = false;
+            this.hinhFb.Click += new System.EventHandler(this.hinhFb_Click);
+            // 
+            // hinhZalo
+            // 
+            this.hinhZalo.Image = ((System.Drawing.Image)(resources.GetObject("hinhZalo.Image")));
+            this.hinhZalo.Location = new System.Drawing.Point(207, 165);
+            this.hinhZalo.Name = "hinhZalo";
+            this.hinhZalo.Size = new System.Drawing.Size(51, 46);
+            this.hinhZalo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.hinhZalo.TabIndex = 5;
+            this.hinhZalo.TabStop = false;
+            this.hinhZalo.Click += new System.EventHandler(this.hinhZalo_Click);
+            // 
             // TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1241, 522);
+            this.Controls.Add(this.hinhZalo);
+            this.Controls.Add(this.hinhFb);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Name = "TrangChu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.TrangChu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -262,6 +304,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hinhFb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hinhZalo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -290,6 +334,9 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement LienHeGmail;
         private DevExpress.XtraBars.Navigation.AccordionControlElement DongGoiSanPham;
         private System.Windows.Forms.Label lbMaNV;
+        private System.Windows.Forms.PictureBox hinhFb;
+        private System.Windows.Forms.PictureBox hinhZalo;
+        private System.Windows.Forms.Panel panelcontrol;
     }
 }
 

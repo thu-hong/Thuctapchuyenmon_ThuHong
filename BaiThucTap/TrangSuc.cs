@@ -18,8 +18,8 @@ namespace BaiThucTap
         public string TenTS { get; set; }
         public Nullable<int> SoLuong { get; set; }
         public Nullable<double> DonGia { get; set; }
+        public string DonVi { get; set; }
         public string MaLoai { get; set; }
         public byte[] HinhAnh { get; set; }
-        public string DonVi { get; set; }
     }
 }
