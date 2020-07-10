@@ -18,5 +18,6 @@ namespace BaiThucTap
         public string MaNCC { get; set; }
         public string MaNV { get; set; }
         public Nullable<System.DateTime> ThơiGianLap { get; set; }
+        public Nullable<double> TongTien { get; set; }
     }
 }

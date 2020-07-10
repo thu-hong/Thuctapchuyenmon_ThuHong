@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLKhachHang));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btfile = new DevExpress.XtraEditors.SimpleButton();
             this.txtnhapmatim = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtsdt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -51,16 +54,19 @@
             this.btxoa1 = new DevExpress.XtraEditors.SimpleButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtngaymua = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label8 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btluu = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btfile
             // 
             this.btfile.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btfile.ImageOptions.Image")));
-            this.btfile.Location = new System.Drawing.Point(119, 229);
+            this.btfile.Location = new System.Drawing.Point(154, 229);
             this.btfile.Name = "btfile";
             this.btfile.Size = new System.Drawing.Size(83, 37);
             this.btfile.TabIndex = 43;
@@ -86,6 +92,7 @@
             this.txtnhapmatim.TabIndex = 13;
             this.txtnhapmatim.Text = "Nhập mã khách hàng cần tìm";
             this.txtnhapmatim.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtnhapmatim.OnValueChanged += new System.EventHandler(this.txtnhapmatim_OnValueChanged);
             // 
             // txtsdt
             // 
@@ -106,6 +113,8 @@
             this.txtsdt.TabIndex = 12;
             this.txtsdt.Text = "vd:02929928";
             this.txtsdt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtsdt.OnValueChanged += new System.EventHandler(this.txtsdt_OnValueChanged);
+            this.txtsdt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsdt_KeyPress);
             // 
             // txtemail
             // 
@@ -221,11 +230,12 @@
             this.bttrove.Name = "bttrove";
             this.bttrove.Size = new System.Drawing.Size(42, 37);
             this.bttrove.TabIndex = 42;
+            this.bttrove.Click += new System.EventHandler(this.bttrove_Click);
             // 
             // bttimkiem1
             // 
             this.bttimkiem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bttimkiem1.ImageOptions.Image")));
-            this.bttimkiem1.Location = new System.Drawing.Point(593, 229);
+            this.bttimkiem1.Location = new System.Drawing.Point(628, 229);
             this.bttimkiem1.Name = "bttimkiem1";
             this.bttimkiem1.Size = new System.Drawing.Size(86, 37);
             this.bttimkiem1.TabIndex = 41;
@@ -239,11 +249,12 @@
             this.btthoat1.Name = "btthoat1";
             this.btthoat1.Size = new System.Drawing.Size(43, 38);
             this.btthoat1.TabIndex = 40;
+            this.btthoat1.Click += new System.EventHandler(this.btthoat1_Click);
             // 
             // btsua1
             // 
             this.btsua1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btsua1.ImageOptions.Image")));
-            this.btsua1.Location = new System.Drawing.Point(475, 229);
+            this.btsua1.Location = new System.Drawing.Point(510, 229);
             this.btsua1.Name = "btsua1";
             this.btsua1.Size = new System.Drawing.Size(79, 37);
             this.btsua1.TabIndex = 39;
@@ -253,7 +264,7 @@
             // btthem1
             // 
             this.btthem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btthem1.ImageOptions.Image")));
-            this.btthem1.Location = new System.Drawing.Point(354, 229);
+            this.btthem1.Location = new System.Drawing.Point(389, 229);
             this.btthem1.Name = "btthem1";
             this.btthem1.Size = new System.Drawing.Size(79, 37);
             this.btthem1.TabIndex = 38;
@@ -300,7 +311,7 @@
             // btxoa1
             // 
             this.btxoa1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btxoa1.ImageOptions.Image")));
-            this.btxoa1.Location = new System.Drawing.Point(230, 229);
+            this.btxoa1.Location = new System.Drawing.Point(265, 229);
             this.btxoa1.Name = "btxoa1";
             this.btxoa1.Size = new System.Drawing.Size(83, 37);
             this.btxoa1.TabIndex = 37;
@@ -309,16 +320,41 @@
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 288);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Location = new System.Drawing.Point(101, 19);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(764, 150);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.Size = new System.Drawing.Size(551, 150);
             this.dataGridView1.TabIndex = 36;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.bunifuMaterialTextbox1);
+            this.groupBox1.Controls.Add(this.txtngaymua);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtnhapmatim);
             this.groupBox1.Controls.Add(this.txtsdt);
@@ -335,10 +371,30 @@
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(18, 66);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(764, 157);
+            this.groupBox1.Size = new System.Drawing.Size(730, 157);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Khách Hàng";
+            // 
+            // txtngaymua
+            // 
+            this.txtngaymua.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtngaymua.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtngaymua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtngaymua.HintForeColor = System.Drawing.Color.Empty;
+            this.txtngaymua.HintText = "";
+            this.txtngaymua.isPassword = false;
+            this.txtngaymua.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtngaymua.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtngaymua.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtngaymua.LineThickness = 3;
+            this.txtngaymua.Location = new System.Drawing.Point(144, 123);
+            this.txtngaymua.Margin = new System.Windows.Forms.Padding(4);
+            this.txtngaymua.Name = "txtngaymua";
+            this.txtngaymua.Size = new System.Drawing.Size(220, 25);
+            this.txtngaymua.TabIndex = 15;
+            this.txtngaymua.Text = "7/2/2020";
+            this.txtngaymua.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label8
             // 
@@ -349,31 +405,32 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Ngày Mua";
             // 
-            // bunifuMaterialTextbox1
+            // groupBox2
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(144, 123);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(220, 25);
-            this.bunifuMaterialTextbox1.TabIndex = 15;
-            this.bunifuMaterialTextbox1.Text = "7/2/2020";
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Location = new System.Drawing.Point(18, 272);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(730, 178);
+            this.groupBox2.TabIndex = 44;
+            this.groupBox2.TabStop = false;
+            // 
+            // btluu
+            // 
+            this.btluu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btluu.ImageOptions.Image")));
+            this.btluu.Location = new System.Drawing.Point(53, 229);
+            this.btluu.Name = "btluu";
+            this.btluu.Size = new System.Drawing.Size(81, 37);
+            this.btluu.TabIndex = 45;
+            this.btluu.Text = "Lưu";
+            this.btluu.Click += new System.EventHandler(this.btluu_Click);
             // 
             // QLKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(797, 450);
+            this.Controls.Add(this.btluu);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btfile);
             this.Controls.Add(this.bttrove);
             this.Controls.Add(this.bttimkiem1);
@@ -382,7 +439,6 @@
             this.Controls.Add(this.btthem1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btxoa1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Name = "QLKhachHang";
             this.Text = "QLKhachHang";
@@ -390,6 +446,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,7 +476,9 @@
         private DevExpress.XtraEditors.SimpleButton btxoa1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtngaymua;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private DevExpress.XtraEditors.SimpleButton btluu;
     }
 }

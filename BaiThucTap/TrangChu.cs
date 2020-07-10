@@ -32,6 +32,7 @@ namespace BaiThucTap
                 MessageBox.Show("Bạn Không có quyền");
                 return;
             }
+            
         }
 
         private void TrangChu_Load(object sender, EventArgs e)
@@ -53,6 +54,12 @@ namespace BaiThucTap
                 MessageBox.Show("Bạn Không có quyền");
                 return;
             }
+            else
+            {
+                QLNhanVien f5 = new QLNhanVien();
+                f5.ShowDialog();
+
+            }
         }
 
         private void QuanLyNhaCungCap_Click(object sender, EventArgs e)
@@ -62,6 +69,12 @@ namespace BaiThucTap
                 MessageBox.Show("Bạn Không có quyền");
                 return;
             }
+            else
+            {
+                QuanLyNhaCungCap f4 = new QuanLyNhaCungCap();
+                f4.ShowDialog();
+            }
+
         }
 
         private void NhapKho_Click(object sender, EventArgs e)

@@ -10,15 +10,12 @@
 namespace BaiThucTap
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class hdtrangsucchuathanhtoan_Result
+    public partial class ChiTietUD
     {
-        public string MaHD { get; set; }
-        public Nullable<System.DateTime> TGLap { get; set; }
-        public Nullable<double> TongTien { get; set; }
-        public string UserName { get; set; }
-        public Nullable<bool> TrangThai { get; set; }
         public string MaUD { get; set; }
-        public string MaKH { get; set; }
+        public string MaHD { get; set; }
+        public string GhiChu { get; set; }
     }
 }

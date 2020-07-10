@@ -264,7 +264,7 @@
             // hinhFb
             // 
             this.hinhFb.Image = ((System.Drawing.Image)(resources.GetObject("hinhFb.Image")));
-            this.hinhFb.Location = new System.Drawing.Point(207, 113);
+            this.hinhFb.Location = new System.Drawing.Point(1187, 122);
             this.hinhFb.Name = "hinhFb";
             this.hinhFb.Size = new System.Drawing.Size(51, 46);
             this.hinhFb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -275,7 +275,7 @@
             // hinhZalo
             // 
             this.hinhZalo.Image = ((System.Drawing.Image)(resources.GetObject("hinhZalo.Image")));
-            this.hinhZalo.Location = new System.Drawing.Point(207, 165);
+            this.hinhZalo.Location = new System.Drawing.Point(1187, 174);
             this.hinhZalo.Name = "hinhZalo";
             this.hinhZalo.Size = new System.Drawing.Size(51, 46);
             this.hinhZalo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

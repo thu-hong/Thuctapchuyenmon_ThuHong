@@ -38,6 +38,9 @@ namespace BaiThucTap
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
+            dataGridView1.AutoResizeColumns();
+            dataGridView1.AutoResizeRows();
             txtMaNV.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
             txtTenNV.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             if (dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString() == "Nam")
@@ -147,6 +150,23 @@ namespace BaiThucTap
                 return;
             }
             dataGridView1.DataSource = ds_nhanvien;
+        }
+
+        private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void txtCMND_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

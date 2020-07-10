@@ -20,5 +20,8 @@ namespace BaiThucTap
         public string UserName { get; set; }
         public Nullable<bool> TrangThai { get; set; }
         public string MaUD { get; set; }
+        public string MaKH { get; set; }
+    
+        public virtual KhachHang KhachHang { get; set; }
     }
 }

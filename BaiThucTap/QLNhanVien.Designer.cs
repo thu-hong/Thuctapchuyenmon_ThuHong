@@ -255,6 +255,7 @@
             this.txtCMND.TabIndex = 34;
             this.txtCMND.Text = "vd:212460789";
             this.txtCMND.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtCMND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCMND_KeyPress);
             // 
             // txtSDT
             // 
@@ -276,6 +277,7 @@
             this.txtSDT.TabIndex = 33;
             this.txtSDT.Text = "vd:0329104765";
             this.txtSDT.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
             // 
             // txtDiaChi
             // 
@@ -354,11 +356,12 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(450, 47);
+            this.dataGridView1.Location = new System.Drawing.Point(394, 38);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(408, 301);
+            this.dataGridView1.Size = new System.Drawing.Size(538, 310);
             this.dataGridView1.TabIndex = 24;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // bttimkiem1
             // 
