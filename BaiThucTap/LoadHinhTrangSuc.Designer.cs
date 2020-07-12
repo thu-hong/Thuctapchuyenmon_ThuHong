@@ -69,7 +69,7 @@
             // 
             // loadhinh
             // 
-            this.loadhinh.BackColor = System.Drawing.Color.Red;
+            this.loadhinh.BackColor = System.Drawing.Color.White;
             this.loadhinh.Location = new System.Drawing.Point(183, 10);
             this.loadhinh.Name = "loadhinh";
             this.loadhinh.Size = new System.Drawing.Size(171, 130);
@@ -169,6 +169,7 @@
             // 
             // LoadHinhTrangSuc
             // 
+            this.AcceptButton = this.btnSua;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(930, 450);

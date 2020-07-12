@@ -119,13 +119,13 @@ namespace BaiThucTap
             foreach(var item in loai)
             {
                 BunifuThinButton2 bt = new BunifuThinButton2();
-                bt.Size = new System.Drawing.Size(80, 45);
+                bt.Size = new System.Drawing.Size(90, 65);
                 bt.TabIndex = i;
-                bt.ActiveFillColor = System.Drawing.Color.DeepSkyBlue;
-                bt.ActiveLineColor = System.Drawing.Color.DeepSkyBlue;
-                bt.IdleFillColor = Color.White;
-                bt.IdleForecolor = Color.MidnightBlue;
-                bt.IdleLineColor = System.Drawing.Color.LightSkyBlue;
+                bt.ActiveFillColor = System.Drawing.Color.Red;
+                bt.ActiveLineColor = System.Drawing.Color.Red;
+                bt.IdleFillColor = Color.NavajoWhite;
+                bt.IdleForecolor = Color.DarkRed;
+                bt.IdleLineColor = System.Drawing.Color.DarkRed;
                 bt.Text = item.TenLoai.ToUpper();
                 bt.Name = item.MaLoai;
                 bt.Click += clickChonDanhMuc;
@@ -161,6 +161,27 @@ namespace BaiThucTap
                 Loadtrangsuc("ML04");
 
             }
+            if (btn.Name.Trim() == "ML05")
+            {
+                Loadtrangsuc("ML05");
+
+            }
+            if (btn.Name.Trim() == "ML06")
+            {
+                Loadtrangsuc("ML06");
+
+            }
+            if (btn.Name.Trim() == "ML07")
+            {
+                Loadtrangsuc("ML07");
+
+            }
+            if (btn.Name.Trim() == "ML08")
+            {
+                Loadtrangsuc("ML08");
+
+            }
+
         }
         private  void Loaduudai()
         {

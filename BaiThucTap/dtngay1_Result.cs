@@ -11,13 +11,13 @@ namespace BaiThucTap
 {
     using System;
     
-    public partial class dskhachhang6_Result
+    public partial class dtngay1_Result
     {
-        public string MaKH { get; set; }
-        public string TenKH { get; set; }
-        public string DiaChi { get; set; }
-        public string SDT { get; set; }
-        public string Email { get; set; }
-        public Nullable<System.DateTime> TGMua { get; set; }
+        public Nullable<System.DateTime> ngaylap { get; set; }
+        public Nullable<int> banhang { get; set; }
+        public Nullable<int> nhaphang { get; set; }
+        public Nullable<int> luongnv { get; set; }
+        public Nullable<int> thuongphat { get; set; }
+        public Nullable<int> doanhthu1 { get; set; }
     }
 }

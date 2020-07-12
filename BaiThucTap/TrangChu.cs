@@ -102,6 +102,12 @@ namespace BaiThucTap
                 MessageBox.Show("Bạn Không có quyền");
                 return;
             }
+            else
+            {
+                BaoCao f7 = new BaoCao();
+                f7.ShowDialog();
+                
+            }
 
         }
 
@@ -111,6 +117,11 @@ namespace BaiThucTap
             {
                 MessageBox.Show("Bạn Không có quyền");
                 return;
+            }
+            else
+            {
+                GuiGmail f8 = new GuiGmail();
+                f8.ShowDialog();
             }
         }
 
@@ -143,6 +154,11 @@ namespace BaiThucTap
         {
             QLKhachHang f2 = new QLKhachHang();
             f2.ShowDialog();
+        }
+
+        private void LienHe_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

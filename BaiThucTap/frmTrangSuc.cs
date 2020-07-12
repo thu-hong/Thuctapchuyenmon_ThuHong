@@ -102,6 +102,7 @@ namespace BaiThucTap
         }
         private void Loadloaitrangsuc()
         {
+            
             List<LoaiTrangSuc> loai = trangsuc.LoaiTrangSucs.ToList();
             cbLoaiTS.DataSource = loai;
             cbLoaiTS.DisplayMember = "TenLoai";

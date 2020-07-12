@@ -28,12 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btThanhToan = new DevExpress.XtraEditors.SimpleButton();
             this.btLuu = new DevExpress.XtraEditors.SimpleButton();
             this.btThem = new DevExpress.XtraEditors.SimpleButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.matrangsuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tentrangsuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaitrangsuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dongia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xoa = new System.Windows.Forms.DataGridViewButtonColumn();
             this.txtSoLuong = new System.Windows.Forms.NumericUpDown();
             this.cbchuathanhtoan = new System.Windows.Forms.ComboBox();
             this.cbLoaiTS = new System.Windows.Forms.ComboBox();
@@ -51,13 +58,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelMua = new System.Windows.Forms.Panel();
-            this.matrangsuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tentrangsuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaitrangsuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dongia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.xoa = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoLuong)).BeginInit();
             this.panelMua.SuspendLayout();
@@ -94,18 +94,18 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.matrangsuc,
@@ -121,6 +121,48 @@
             this.dataGridView1.Size = new System.Drawing.Size(503, 215);
             this.dataGridView1.TabIndex = 15;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // matrangsuc
+            // 
+            this.matrangsuc.HeaderText = "Mã Trang Sức";
+            this.matrangsuc.Name = "matrangsuc";
+            this.matrangsuc.ReadOnly = true;
+            // 
+            // tentrangsuc
+            // 
+            this.tentrangsuc.HeaderText = "Tên Trang Sức";
+            this.tentrangsuc.Name = "tentrangsuc";
+            this.tentrangsuc.ReadOnly = true;
+            // 
+            // loaitrangsuc
+            // 
+            this.loaitrangsuc.HeaderText = "Loại TS";
+            this.loaitrangsuc.Name = "loaitrangsuc";
+            this.loaitrangsuc.ReadOnly = true;
+            // 
+            // soluong
+            // 
+            this.soluong.HeaderText = "Số Lượng";
+            this.soluong.Name = "soluong";
+            this.soluong.ReadOnly = true;
+            // 
+            // dongia
+            // 
+            this.dongia.HeaderText = "Đơn Giá";
+            this.dongia.Name = "dongia";
+            this.dongia.ReadOnly = true;
+            // 
+            // thanhtien
+            // 
+            this.thanhtien.HeaderText = "Thành Tiền";
+            this.thanhtien.Name = "thanhtien";
+            this.thanhtien.ReadOnly = true;
+            // 
+            // xoa
+            // 
+            this.xoa.HeaderText = "Xóa";
+            this.xoa.Name = "xoa";
+            this.xoa.ReadOnly = true;
             // 
             // txtSoLuong
             // 
@@ -202,9 +244,9 @@
             // panelAnh
             // 
             this.panelAnh.AutoScroll = true;
-            this.panelAnh.Location = new System.Drawing.Point(15, 92);
+            this.panelAnh.Location = new System.Drawing.Point(15, 111);
             this.panelAnh.Name = "panelAnh";
-            this.panelAnh.Size = new System.Drawing.Size(723, 450);
+            this.panelAnh.Size = new System.Drawing.Size(723, 431);
             this.panelAnh.TabIndex = 6;
             // 
             // panelDanhMuc
@@ -213,7 +255,7 @@
             this.panelDanhMuc.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
             this.panelDanhMuc.Location = new System.Drawing.Point(12, 12);
             this.panelDanhMuc.Name = "panelDanhMuc";
-            this.panelDanhMuc.Size = new System.Drawing.Size(726, 76);
+            this.panelDanhMuc.Size = new System.Drawing.Size(726, 93);
             this.panelDanhMuc.TabIndex = 5;
             // 
             // label5
@@ -286,52 +328,11 @@
             this.panelMua.Size = new System.Drawing.Size(509, 530);
             this.panelMua.TabIndex = 4;
             // 
-            // matrangsuc
-            // 
-            this.matrangsuc.HeaderText = "Mã Trang Sức";
-            this.matrangsuc.Name = "matrangsuc";
-            this.matrangsuc.ReadOnly = true;
-            // 
-            // tentrangsuc
-            // 
-            this.tentrangsuc.HeaderText = "Tên Trang Sức";
-            this.tentrangsuc.Name = "tentrangsuc";
-            this.tentrangsuc.ReadOnly = true;
-            // 
-            // loaitrangsuc
-            // 
-            this.loaitrangsuc.HeaderText = "Loại TS";
-            this.loaitrangsuc.Name = "loaitrangsuc";
-            this.loaitrangsuc.ReadOnly = true;
-            // 
-            // soluong
-            // 
-            this.soluong.HeaderText = "Số Lượng";
-            this.soluong.Name = "soluong";
-            this.soluong.ReadOnly = true;
-            // 
-            // dongia
-            // 
-            this.dongia.HeaderText = "Đơn Giá";
-            this.dongia.Name = "dongia";
-            this.dongia.ReadOnly = true;
-            // 
-            // thanhtien
-            // 
-            this.thanhtien.HeaderText = "Thành Tiền";
-            this.thanhtien.Name = "thanhtien";
-            this.thanhtien.ReadOnly = true;
-            // 
-            // xoa
-            // 
-            this.xoa.HeaderText = "Xóa";
-            this.xoa.Name = "xoa";
-            this.xoa.ReadOnly = true;
-            // 
             // loadthu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1255, 558);
             this.Controls.Add(this.panelAnh);
             this.Controls.Add(this.panelDanhMuc);

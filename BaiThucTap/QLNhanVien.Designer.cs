@@ -234,6 +234,7 @@
             this.cbchucvu.Name = "cbchucvu";
             this.cbchucvu.Size = new System.Drawing.Size(207, 21);
             this.cbchucvu.TabIndex = 36;
+            this.cbchucvu.SelectedIndexChanged += new System.EventHandler(this.cbchucvu_SelectedIndexChanged);
             // 
             // txtCMND
             // 

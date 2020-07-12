@@ -66,6 +66,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(207, 113);
             this.pictureBox1.Name = "pictureBox1";
@@ -127,6 +128,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel2.Controls.Add(this.accordionControl1);
             this.panel2.Location = new System.Drawing.Point(12, 113);
             this.panel2.Name = "panel2";
@@ -155,6 +157,11 @@
             this.QuanLyHoaDon,
             this.DongGoiSanPham});
             this.DanhMuc.Expanded = true;
+            this.DanhMuc.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl)});
             this.DanhMuc.Name = "DanhMuc";
             this.DanhMuc.Text = "DANH MỤC";
             // 
@@ -253,6 +260,7 @@
             this.LienHe.Expanded = true;
             this.LienHe.Name = "LienHe";
             this.LienHe.Text = "Liên Hệ ";
+            this.LienHe.Click += new System.EventHandler(this.LienHe_Click);
             // 
             // LienHeGmail
             // 

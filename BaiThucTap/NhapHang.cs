@@ -18,25 +18,15 @@ namespace BaiThucTap
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
+       
 
         private void NhapHang_Load(object sender, EventArgs e)
         {
-          // dataGridView1.DataSource = trangsuc.dsnhanvien().ToList();
+          
         }
 
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
+       
 
-        }
-
-        private void bttimkiem1_Click(object sender, EventArgs e)
-        {
-            string timKiem = txtnhapmatim.Text.Trim();
-            dataGridView1.DataSource = trangsuc.TraCuu_LichSuMua(timKiem).ToList();
-        }
+        
     }
 }

@@ -10,14 +10,12 @@
 namespace BaiThucTap
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class dskhachhang1_Result
+    public partial class LuongNgay
     {
-        public string MaKH { get; set; }
-        public string TenKH { get; set; }
-        public string DiaChi { get; set; }
-        public string SDT { get; set; }
-        public string Email { get; set; }
-        public Nullable<System.DateTime> TGMua { get; set; }
+        public string MaNV { get; set; }
+        public System.DateTime Ngay { get; set; }
+        public Nullable<double> Luong { get; set; }
     }
 }

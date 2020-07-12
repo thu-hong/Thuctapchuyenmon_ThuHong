@@ -168,5 +168,10 @@ namespace BaiThucTap
         {
 
         }
+
+        private void cbchucvu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

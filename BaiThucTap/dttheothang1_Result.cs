@@ -11,11 +11,14 @@ namespace BaiThucTap
 {
     using System;
     
-    public partial class TraCuu_LichSuMua_Result
+    public partial class dttheothang1_Result
     {
-        public string MaHD { get; set; }
-        public string MaKH { get; set; }
-        public Nullable<System.DateTime> TGLap { get; set; }
-        public Nullable<double> TongTien { get; set; }
+        public Nullable<System.DateTime> ngaylap { get; set; }
+        public Nullable<int> banhang { get; set; }
+        public Nullable<int> nhaphang { get; set; }
+        public Nullable<int> luongnv { get; set; }
+        public Nullable<int> thuongphat { get; set; }
+        public Nullable<int> luongngay { get; set; }
+        public Nullable<int> doanhthu { get; set; }
     }
 }
