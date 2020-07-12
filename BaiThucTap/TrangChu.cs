@@ -32,6 +32,11 @@ namespace BaiThucTap
                 MessageBox.Show("Bạn Không có quyền");
                 return;
             }
+            else
+            {
+                DongGoiDuLieu f9 = new DongGoiDuLieu();
+                f9.ShowDialog();
+            }
             
         }
 
