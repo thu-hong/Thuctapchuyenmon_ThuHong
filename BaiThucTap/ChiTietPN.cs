@@ -21,5 +21,6 @@ namespace BaiThucTap
         public string MaLoai { get; set; }
         public string TenTS { get; set; }
         public string DonVi { get; set; }
+        public byte[] Anh { get; set; }
     }
 }

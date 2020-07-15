@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyHoaDon));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyHoaDon));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbkhachhang = new System.Windows.Forms.ComboBox();
             this.cbuser = new System.Windows.Forms.ComboBox();
             this.txttongtien = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnxuatpdf = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnthemHD = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnxuatexcel = new Bunifu.Framework.UI.BunifuFlatButton();
             this.cbmaud = new System.Windows.Forms.ComboBox();
@@ -45,10 +46,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridview1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.dataSetHoaDon1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSetHoaDon1 = new BaiThucTap.DataSetHoaDon();
-            this.hoaDonTableAdapter1 = new BaiThucTap.DataSetHoaDonTableAdapters.HoaDonTableAdapter();
-            this.moFile = new System.Windows.Forms.SaveFileDialog();
             this.mahd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tglap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.makh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,7 +61,10 @@
             this.trangThaiDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.maUDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.maKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnxuatpdf = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.dataSetHoaDon1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetHoaDon1 = new BaiThucTap.DataSetHoaDon();
+            this.hoaDonTableAdapter1 = new BaiThucTap.DataSetHoaDonTableAdapters.HoaDonTableAdapter();
+            this.moFile = new System.Windows.Forms.SaveFileDialog();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridview1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetHoaDon1BindingSource)).BeginInit();
@@ -76,7 +76,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(393, 9);
+            this.label1.Location = new System.Drawing.Point(281, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(251, 28);
             this.label1.TabIndex = 0;
@@ -84,7 +84,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.cbkhachhang);
             this.groupBox1.Controls.Add(this.cbuser);
             this.groupBox1.Controls.Add(this.txttongtien);
@@ -134,7 +134,6 @@
             this.txttongtien.Name = "txttongtien";
             this.txttongtien.Size = new System.Drawing.Size(173, 23);
             this.txttongtien.TabIndex = 76;
-            this.txttongtien.Text = "bunifuMetroTextbox2";
             this.txttongtien.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label4
@@ -147,10 +146,48 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "UserName :";
             // 
+            // btnxuatpdf
+            // 
+            this.btnxuatpdf.Activecolor = System.Drawing.Color.Transparent;
+            this.btnxuatpdf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnxuatpdf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnxuatpdf.BorderRadius = 0;
+            this.btnxuatpdf.ButtonText = "Xuất pdf";
+            this.btnxuatpdf.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnxuatpdf.DisabledColor = System.Drawing.Color.Gray;
+            this.btnxuatpdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnxuatpdf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnxuatpdf.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnxuatpdf.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnxuatpdf.Iconimage")));
+            this.btnxuatpdf.Iconimage_right = null;
+            this.btnxuatpdf.Iconimage_right_Selected = null;
+            this.btnxuatpdf.Iconimage_Selected = null;
+            this.btnxuatpdf.IconMarginLeft = 0;
+            this.btnxuatpdf.IconMarginRight = 0;
+            this.btnxuatpdf.IconRightVisible = true;
+            this.btnxuatpdf.IconRightZoom = 0D;
+            this.btnxuatpdf.IconVisible = true;
+            this.btnxuatpdf.IconZoom = 90D;
+            this.btnxuatpdf.IsTab = false;
+            this.btnxuatpdf.Location = new System.Drawing.Point(427, 147);
+            this.btnxuatpdf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnxuatpdf.Name = "btnxuatpdf";
+            this.btnxuatpdf.Normalcolor = System.Drawing.Color.White;
+            this.btnxuatpdf.OnHovercolor = System.Drawing.Color.White;
+            this.btnxuatpdf.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnxuatpdf.selected = false;
+            this.btnxuatpdf.Size = new System.Drawing.Size(132, 48);
+            this.btnxuatpdf.TabIndex = 73;
+            this.btnxuatpdf.Text = "Xuất pdf";
+            this.btnxuatpdf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnxuatpdf.Textcolor = System.Drawing.Color.Blue;
+            this.btnxuatpdf.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnxuatpdf.Click += new System.EventHandler(this.btnxuatpdf_Click);
+            // 
             // btnthemHD
             // 
             this.btnthemHD.Activecolor = System.Drawing.Color.Transparent;
-            this.btnthemHD.BackColor = System.Drawing.Color.White;
+            this.btnthemHD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnthemHD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnthemHD.BorderRadius = 0;
             this.btnthemHD.ButtonText = "Thêm hóa đơn";
@@ -188,7 +225,7 @@
             // btnxuatexcel
             // 
             this.btnxuatexcel.Activecolor = System.Drawing.Color.Transparent;
-            this.btnxuatexcel.BackColor = System.Drawing.Color.White;
+            this.btnxuatexcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnxuatexcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnxuatexcel.BorderRadius = 0;
             this.btnxuatexcel.ButtonText = "Xuất excel";
@@ -267,11 +304,11 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridview1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridview1.AutoGenerateColumns = false;
-            this.dataGridview1.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dataGridview1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dataGridview1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridview1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -298,28 +335,14 @@
             this.dataGridview1.DataSource = this.dataSetHoaDon1BindingSource;
             this.dataGridview1.DoubleBuffered = true;
             this.dataGridview1.EnableHeadersVisualStyles = false;
-            this.dataGridview1.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.dataGridview1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.dataGridview1.HeaderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.dataGridview1.Location = new System.Drawing.Point(34, 279);
+            this.dataGridview1.Location = new System.Drawing.Point(25, 279);
             this.dataGridview1.Name = "dataGridview1";
             this.dataGridview1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridview1.Size = new System.Drawing.Size(819, 250);
+            this.dataGridview1.Size = new System.Drawing.Size(819, 217);
             this.dataGridview1.TabIndex = 5;
             this.dataGridview1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridview1_CellContentClick);
-            // 
-            // dataSetHoaDon1BindingSource
-            // 
-            this.dataSetHoaDon1BindingSource.DataMember = "HoaDon";
-            this.dataSetHoaDon1BindingSource.DataSource = this.dataSetHoaDon1;
-            // 
-            // dataSetHoaDon1
-            // 
-            this.dataSetHoaDon1.DataSetName = "DataSetHoaDon";
-            this.dataSetHoaDon1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // hoaDonTableAdapter1
-            // 
-            this.hoaDonTableAdapter1.ClearBeforeFill = true;
             // 
             // mahd
             // 
@@ -413,49 +436,26 @@
             this.maKHDataGridViewTextBoxColumn.HeaderText = "MaKH";
             this.maKHDataGridViewTextBoxColumn.Name = "maKHDataGridViewTextBoxColumn";
             // 
-            // btnxuatpdf
+            // dataSetHoaDon1BindingSource
             // 
-            this.btnxuatpdf.Activecolor = System.Drawing.Color.Transparent;
-            this.btnxuatpdf.BackColor = System.Drawing.Color.White;
-            this.btnxuatpdf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnxuatpdf.BorderRadius = 0;
-            this.btnxuatpdf.ButtonText = "Xuất pdf";
-            this.btnxuatpdf.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnxuatpdf.DisabledColor = System.Drawing.Color.Gray;
-            this.btnxuatpdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxuatpdf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnxuatpdf.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnxuatpdf.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnxuatpdf.Iconimage")));
-            this.btnxuatpdf.Iconimage_right = null;
-            this.btnxuatpdf.Iconimage_right_Selected = null;
-            this.btnxuatpdf.Iconimage_Selected = null;
-            this.btnxuatpdf.IconMarginLeft = 0;
-            this.btnxuatpdf.IconMarginRight = 0;
-            this.btnxuatpdf.IconRightVisible = true;
-            this.btnxuatpdf.IconRightZoom = 0D;
-            this.btnxuatpdf.IconVisible = true;
-            this.btnxuatpdf.IconZoom = 90D;
-            this.btnxuatpdf.IsTab = false;
-            this.btnxuatpdf.Location = new System.Drawing.Point(427, 147);
-            this.btnxuatpdf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnxuatpdf.Name = "btnxuatpdf";
-            this.btnxuatpdf.Normalcolor = System.Drawing.Color.White;
-            this.btnxuatpdf.OnHovercolor = System.Drawing.Color.White;
-            this.btnxuatpdf.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnxuatpdf.selected = false;
-            this.btnxuatpdf.Size = new System.Drawing.Size(132, 48);
-            this.btnxuatpdf.TabIndex = 73;
-            this.btnxuatpdf.Text = "Xuất pdf";
-            this.btnxuatpdf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnxuatpdf.Textcolor = System.Drawing.Color.Blue;
-            this.btnxuatpdf.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxuatpdf.Click += new System.EventHandler(this.btnxuatpdf_Click);
+            this.dataSetHoaDon1BindingSource.DataMember = "HoaDon";
+            this.dataSetHoaDon1BindingSource.DataSource = this.dataSetHoaDon1;
+            // 
+            // dataSetHoaDon1
+            // 
+            this.dataSetHoaDon1.DataSetName = "DataSetHoaDon";
+            this.dataSetHoaDon1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hoaDonTableAdapter1
+            // 
+            this.hoaDonTableAdapter1.ClearBeforeFill = true;
             // 
             // QuanLyHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 509);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(871, 507);
             this.Controls.Add(this.dataGridview1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);

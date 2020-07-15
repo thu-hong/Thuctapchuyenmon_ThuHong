@@ -27,6 +27,7 @@
           <Property Name="MaLoai" Type="nchar" MaxLength="10" />
           <Property Name="TenTS" Type="nvarchar" MaxLength="50" />
           <Property Name="DonVi" Type="nvarchar" MaxLength="50" />
+          <Property Name="Anh" Type="image" />
         </EntityType>
         <EntityType Name="ChiTietUD">
           <Key>
@@ -160,9 +161,10 @@
         <EntityType Name="ThuongPhat">
           <Key>
             <PropertyRef Name="MaThuongPhat" />
+            <PropertyRef Name="MaNV" />
           </Key>
           <Property Name="MaThuongPhat" Type="nchar" MaxLength="10" Nullable="false" />
-          <Property Name="MaNV" Type="nchar" MaxLength="10" />
+          <Property Name="MaNV" Type="nchar" MaxLength="10" Nullable="false" />
           <Property Name="Ngay" Type="date" />
           <Property Name="SoTien" Type="float" />
           <Property Name="LiDo" Type="nvarchar" MaxLength="50" />
@@ -320,6 +322,42 @@
             </CollectionType>
           </ReturnType>
         </Function>
+        <Function Name="hangtonkho" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="thang" Type="int" Mode="In" />
+          <Parameter Name="nam" Type="int" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="MaTS" Type="nchar" MaxLength="100" />
+                <Property Name="TenTS" Type="nvarchar" MaxLength="50" />
+                <Property Name="SlNhap" Type="int" />
+                <Property Name="SLBan" Type="int" />
+                <Property Name="TonKho" Type="int" />
+                <Property Name="NgayLap" Type="date" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="HangTonKho4" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="thang" Type="int" Mode="In" />
+          <Parameter Name="nam" Type="int" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="MaHang" Type="nchar" MaxLength="100" />
+                <Property Name="TenHang" Type="nvarchar" MaxLength="50" />
+                <Property Name="SlNhap" Type="int" />
+                <Property Name="SLBan" Type="int" />
+                <Property Name="TonKho" Type="int" />
+                <Property Name="NgayLap" Type="date" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="hangtonkhoaaa" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="thang" Type="int" Mode="In" />
+          <Parameter Name="nam" Type="int" Mode="In" />
+        </Function>
         <Function Name="hdtrangsucchuathanhtoan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="insertCTPN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="MaPN" Type="nchar" Mode="In" />
@@ -387,6 +425,10 @@
         </Function>
         <Function Name="xoancc" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="mancc" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="xuathangtonkho" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="thang" Type="int" Mode="In" />
+          <Parameter Name="nam" Type="int" Mode="In" />
         </Function>
         <EntityContainer Name="quanlytrangsucModelStoreContainer">
           <EntitySet Name="ChiTietHD" EntityType="Self.ChiTietHD" Schema="dbo" store:Type="Tables" />
@@ -466,6 +508,22 @@
           <Property Name="MaHD" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="TGLap" Type="DateTime" />
         </ComplexType>
+        <ComplexType Name="hangtonkho_Result">
+          <Property Name="MaTS" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="TenTS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SlNhap" Type="Int32" />
+          <Property Name="SLBan" Type="Int32" />
+          <Property Name="TonKho" Type="Int32" />
+          <Property Name="NgayLap" Type="DateTime" />
+        </ComplexType>
+        <ComplexType Name="HangTonKho4_Result">
+          <Property Name="MaHang" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="TenHang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SlNhap" Type="Int32" />
+          <Property Name="SLBan" Type="Int32" />
+          <Property Name="TonKho" Type="Int32" />
+          <Property Name="NgayLap" Type="DateTime" />
+        </ComplexType>
         <EntityType Name="ChiTietHD">
           <Key>
             <PropertyRef Name="MaHD" />
@@ -488,6 +546,7 @@
           <Property Name="MaLoai" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="TenTS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="DonVi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Anh" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="ChiTietUD">
           <Key>
@@ -623,9 +682,10 @@
         <EntityType Name="ThuongPhat">
           <Key>
             <PropertyRef Name="MaThuongPhat" />
+            <PropertyRef Name="MaNV" />
           </Key>
           <Property Name="MaThuongPhat" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
-          <Property Name="MaNV" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="MaNV" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
           <Property Name="Ngay" Type="DateTime" Precision="0" />
           <Property Name="SoTien" Type="Double" />
           <Property Name="LiDo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -707,6 +767,14 @@
           </FunctionImport>
           <FunctionImport Name="getmahd1" IsComposable="true" ReturnType="Collection(quanlytrangsucModel.getmahd1_Result)" />
           <FunctionImport Name="getmahd2" IsComposable="true" ReturnType="Collection(quanlytrangsucModel.getmahd2_Result)" />
+          <FunctionImport Name="hangtonkho" IsComposable="true" ReturnType="Collection(quanlytrangsucModel.hangtonkho_Result)">
+            <Parameter Name="thang" Mode="In" Type="Int32" />
+            <Parameter Name="nam" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="HangTonKho4" IsComposable="true" ReturnType="Collection(quanlytrangsucModel.HangTonKho4_Result)">
+            <Parameter Name="thang" Mode="In" Type="Int32" />
+            <Parameter Name="nam" Mode="In" Type="Int32" />
+          </FunctionImport>
           <FunctionImport Name="deleHD1">
             <Parameter Name="mahd" Mode="In" Type="String" />
           </FunctionImport>
@@ -724,6 +792,10 @@
             <Parameter Name="nam" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="dttheothang1" ReturnType="Collection(quanlytrangsucModel.dttheothang1_Result)">
+            <Parameter Name="thang" Mode="In" Type="Int32" />
+            <Parameter Name="nam" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="hangtonkhoaaa" ReturnType="Collection(quanlytrangsucModel.hangtonkhoaaa_Result)">
             <Parameter Name="thang" Mode="In" Type="Int32" />
             <Parameter Name="nam" Mode="In" Type="Int32" />
           </FunctionImport>
@@ -795,6 +867,10 @@
           <FunctionImport Name="xoancc">
             <Parameter Name="mancc" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="xuathangtonkho" ReturnType="Collection(quanlytrangsucModel.xuathangtonkho_Result)">
+            <Parameter Name="thang" Mode="In" Type="Int32" />
+            <Parameter Name="nam" Mode="In" Type="Int32" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="dttheongay_Result">
           <Property Type="DateTime" Name="ngaylap" Nullable="true" />
@@ -826,6 +902,14 @@
           <Property Type="Int32" Name="thuongphat" Nullable="true" />
           <Property Type="Int32" Name="luongngay" Nullable="true" />
           <Property Type="Int32" Name="doanhthu" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="hangtonkhoaaa_Result">
+          <Property Type="String" Name="MaHang" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="TenHang" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="SlNhap" Nullable="true" />
+          <Property Type="Int32" Name="SLBan" Nullable="true" />
+          <Property Type="Int32" Name="TonKho" Nullable="true" />
+          <Property Type="DateTime" Name="NgayLap" Nullable="true" />
         </ComplexType>
         <ComplexType Name="hdtrangsucchuathanhtoan_Result">
           <Property Type="String" Name="MaHD" Nullable="false" MaxLength="10" />
@@ -867,6 +951,14 @@
           <Property Type="DateTime" Name="NgayKT" Nullable="true" />
           <Property Type="Double" Name="GiamGia" Nullable="true" />
         </ComplexType>
+        <ComplexType Name="xuathangtonkho_Result">
+          <Property Type="String" Name="MaTS" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="TenTS" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="SlNhap" Nullable="true" />
+          <Property Type="Int32" Name="SLBan" Nullable="true" />
+          <Property Type="Int32" Name="TonKho" Nullable="true" />
+          <Property Type="DateTime" Name="NgayLap" Nullable="true" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -893,6 +985,7 @@
                 <ScalarProperty Name="MaLoai" ColumnName="MaLoai" />
                 <ScalarProperty Name="TenTS" ColumnName="TenTS" />
                 <ScalarProperty Name="DonVi" ColumnName="DonVi" />
+                <ScalarProperty Name="Anh" ColumnName="Anh" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -1146,6 +1239,30 @@
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <FunctionImportMapping FunctionName="quanlytrangsucModel.Store.hangtonkho" FunctionImportName="hangtonkho">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="quanlytrangsucModel.hangtonkho_Result">
+                <ScalarProperty Name="MaTS" ColumnName="MaTS" />
+                <ScalarProperty Name="TenTS" ColumnName="TenTS" />
+                <ScalarProperty Name="SlNhap" ColumnName="SlNhap" />
+                <ScalarProperty Name="SLBan" ColumnName="SLBan" />
+                <ScalarProperty Name="TonKho" ColumnName="TonKho" />
+                <ScalarProperty Name="NgayLap" ColumnName="NgayLap" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionName="quanlytrangsucModel.Store.HangTonKho4" FunctionImportName="HangTonKho4">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="quanlytrangsucModel.HangTonKho4_Result">
+                <ScalarProperty Name="MaHang" ColumnName="MaHang" />
+                <ScalarProperty Name="TenHang" ColumnName="TenHang" />
+                <ScalarProperty Name="SlNhap" ColumnName="SlNhap" />
+                <ScalarProperty Name="SLBan" ColumnName="SLBan" />
+                <ScalarProperty Name="TonKho" ColumnName="TonKho" />
+                <ScalarProperty Name="NgayLap" ColumnName="NgayLap" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="deleHD1" FunctionName="quanlytrangsucModel.Store.deleHD1" />
           <FunctionImportMapping FunctionImportName="deleteNhanVien" FunctionName="quanlytrangsucModel.Store.deleteNhanVien" />
           <FunctionImportMapping FunctionImportName="dttheongay" FunctionName="quanlytrangsucModel.Store.dttheongay">
@@ -1192,6 +1309,18 @@
                 <ScalarProperty Name="thuongphat" ColumnName="thuongphat" />
                 <ScalarProperty Name="luongngay" ColumnName="luongngay" />
                 <ScalarProperty Name="doanhthu" ColumnName="doanhthu" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="hangtonkhoaaa" FunctionName="quanlytrangsucModel.Store.hangtonkhoaaa">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="quanlytrangsucModel.hangtonkhoaaa_Result">
+                <ScalarProperty Name="MaHang" ColumnName="MaHang" />
+                <ScalarProperty Name="TenHang" ColumnName="TenHang" />
+                <ScalarProperty Name="SlNhap" ColumnName="SlNhap" />
+                <ScalarProperty Name="SLBan" ColumnName="SLBan" />
+                <ScalarProperty Name="TonKho" ColumnName="TonKho" />
+                <ScalarProperty Name="NgayLap" ColumnName="NgayLap" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
@@ -1270,6 +1399,18 @@
             </ResultMapping>
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="xoancc" FunctionName="quanlytrangsucModel.Store.xoancc" />
+          <FunctionImportMapping FunctionImportName="xuathangtonkho" FunctionName="quanlytrangsucModel.Store.xuathangtonkho">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="quanlytrangsucModel.xuathangtonkho_Result">
+                <ScalarProperty Name="MaTS" ColumnName="MaTS" />
+                <ScalarProperty Name="TenTS" ColumnName="TenTS" />
+                <ScalarProperty Name="SlNhap" ColumnName="SlNhap" />
+                <ScalarProperty Name="SLBan" ColumnName="SLBan" />
+                <ScalarProperty Name="TonKho" ColumnName="TonKho" />
+                <ScalarProperty Name="NgayLap" ColumnName="NgayLap" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

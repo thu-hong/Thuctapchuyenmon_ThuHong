@@ -25,8 +25,21 @@ namespace BaiThucTap
           
         }
 
-       
+        private void btthem_Click(object sender, EventArgs e)
+        {
 
-        
+        } 
+
+        private void btsua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btxoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

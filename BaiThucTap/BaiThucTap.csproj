@@ -119,6 +119,12 @@
     <Compile Include="ChucVu.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
     <Compile Include="CTPhanQuyen.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -144,6 +150,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetHoaDon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetnhacungcap.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetnhacungcap.xsd</DependentUpon>
     </Compile>
     <Compile Include="DataSetTrangSuc.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -212,6 +223,26 @@
     <Compile Include="GuiGmail.Designer.cs">
       <DependentUpon>GuiGmail.cs</DependentUpon>
     </Compile>
+    <Compile Include="hangkho.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hangkho.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HangTon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HangTon.Designer.cs">
+      <DependentUpon>HangTon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HangTonKho4_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hangtonkhoaaa_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hangtonkho_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="hdtrangsucchuathanhtoan_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -220,6 +251,12 @@
     </Compile>
     <Compile Include="KhachHang.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="khachhangdangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="khachhangdangnhap.Designer.cs">
+      <DependentUpon>khachhangdangnhap.cs</DependentUpon>
     </Compile>
     <Compile Include="LoadHinhTrangSuc.cs">
       <SubType>Form</SubType>
@@ -238,6 +275,12 @@
     </Compile>
     <Compile Include="LuongNgay.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LuongNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LuongNhanVien.Designer.cs">
+      <DependentUpon>LuongNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -353,11 +396,17 @@
     <Compile Include="uudaimoinhat1_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="xuathangtonkho_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BaoCao.resx">
       <DependentUpon>BaoCao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BaoCaoTheoNgay.resx">
       <DependentUpon>BaoCaoTheoNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DongGoiDuLieu.resx">
       <DependentUpon>DongGoiDuLieu.cs</DependentUpon>
@@ -371,11 +420,21 @@
     <EmbeddedResource Include="GuiGmail.resx">
       <DependentUpon>GuiGmail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HangTon.resx">
+      <DependentUpon>HangTon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hangtonkho11.rdlc" />
+    <EmbeddedResource Include="khachhangdangnhap.resx">
+      <DependentUpon>khachhangdangnhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoadHinhTrangSuc.resx">
       <DependentUpon>LoadHinhTrangSuc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loadthu.resx">
       <DependentUpon>loadthu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuongNhanVien.resx">
+      <DependentUpon>LuongNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhapHang.resx">
       <DependentUpon>NhapHang.cs</DependentUpon>
@@ -459,6 +518,17 @@
     <None Include="DataSetHoaDon.xss">
       <DependentUpon>DataSetHoaDon.xsd</DependentUpon>
     </None>
+    <None Include="DataSetnhacungcap.xsc">
+      <DependentUpon>DataSetnhacungcap.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetnhacungcap.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetnhacungcap.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetnhacungcap.xss">
+      <DependentUpon>DataSetnhacungcap.xsd</DependentUpon>
+    </None>
     <None Include="DataSetTrangSuc.xsc">
       <DependentUpon>DataSetTrangSuc.xsd</DependentUpon>
     </None>
@@ -485,6 +555,17 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="hangkho.xsc">
+      <DependentUpon>hangkho.xsd</DependentUpon>
+    </None>
+    <None Include="hangkho.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hangkho.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="hangkho.xss">
+      <DependentUpon>hangkho.xsd</DependentUpon>
+    </None>
     <None Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
@@ -531,4 +612,8 @@
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+   if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
 </Project>

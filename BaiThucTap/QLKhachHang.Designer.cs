@@ -34,33 +34,31 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btluu = new DevExpress.XtraEditors.SimpleButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtngaymua = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btxoa1 = new DevExpress.XtraEditors.SimpleButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.btthem1 = new DevExpress.XtraEditors.SimpleButton();
             this.btsua1 = new DevExpress.XtraEditors.SimpleButton();
             this.btthoat1 = new DevExpress.XtraEditors.SimpleButton();
             this.bttimkiem1 = new DevExpress.XtraEditors.SimpleButton();
             this.bttrove = new DevExpress.XtraEditors.SimpleButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.btfile = new DevExpress.XtraEditors.SimpleButton();
             this.txtmakh = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txttenkh = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtdiachi = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtemail = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtsdt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtnhapmatim = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.btfile = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btluu
@@ -75,65 +73,13 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox2.BackgroundImage")));
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Location = new System.Drawing.Point(18, 272);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(730, 178);
             this.groupBox2.TabIndex = 44;
             this.groupBox2.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(82, 127);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 13);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Ngày Mua";
-            // 
-            // txtngaymua
-            // 
-            this.txtngaymua.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtngaymua.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtngaymua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtngaymua.HintForeColor = System.Drawing.Color.Empty;
-            this.txtngaymua.HintText = "";
-            this.txtngaymua.isPassword = false;
-            this.txtngaymua.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtngaymua.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtngaymua.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtngaymua.LineThickness = 3;
-            this.txtngaymua.Location = new System.Drawing.Point(144, 123);
-            this.txtngaymua.Margin = new System.Windows.Forms.Padding(4);
-            this.txtngaymua.Name = "txtngaymua";
-            this.txtngaymua.Size = new System.Drawing.Size(220, 25);
-            this.txtngaymua.TabIndex = 15;
-            this.txtngaymua.Text = "7/2/2020";
-            this.txtngaymua.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txtngaymua);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.txtnhapmatim);
-            this.groupBox1.Controls.Add(this.txtsdt);
-            this.groupBox1.Controls.Add(this.txtemail);
-            this.groupBox1.Controls.Add(this.txtdiachi);
-            this.groupBox1.Controls.Add(this.txttenkh);
-            this.groupBox1.Controls.Add(this.txtmakh);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(18, 66);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(730, 157);
-            this.groupBox1.TabIndex = 34;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông Tin Khách Hàng";
             // 
             // dataGridView1
             // 
@@ -164,7 +110,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Size = new System.Drawing.Size(551, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(556, 150);
             this.dataGridView1.TabIndex = 36;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -179,42 +125,15 @@
             this.btxoa1.Text = "Xóa";
             this.btxoa1.Click += new System.EventHandler(this.btxoa1_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(102, 97);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "SDT";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(48, 65);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Tên Khách Hàng";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tempus Sans ITC", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(263, 39);
+            this.label1.Location = new System.Drawing.Point(261, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(242, 24);
             this.label1.TabIndex = 35;
             this.label1.Text = "QUẢN LÍ KHÁCH HÀNG";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(394, 28);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Địa Chỉ";
             // 
             // btthem1
             // 
@@ -264,32 +183,15 @@
             this.bttrove.TabIndex = 42;
             this.bttrove.Click += new System.EventHandler(this.bttrove_Click);
             // 
-            // label3
+            // btfile
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(52, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Mã Khách Hàng";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(394, 65);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Email";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(380, 97);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Nhập mã tìm";
+            this.btfile.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btfile.ImageOptions.Image")));
+            this.btfile.Location = new System.Drawing.Point(154, 229);
+            this.btfile.Name = "btfile";
+            this.btfile.Size = new System.Drawing.Size(83, 37);
+            this.btfile.TabIndex = 43;
+            this.btfile.Text = "File";
+            this.btfile.Click += new System.EventHandler(this.btfile_Click);
             // 
             // txtmakh
             // 
@@ -343,7 +245,7 @@
             this.txtdiachi.LineIdleColor = System.Drawing.Color.Gray;
             this.txtdiachi.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtdiachi.LineThickness = 3;
-            this.txtdiachi.Location = new System.Drawing.Point(453, 20);
+            this.txtdiachi.Location = new System.Drawing.Point(492, 20);
             this.txtdiachi.Margin = new System.Windows.Forms.Padding(4);
             this.txtdiachi.Name = "txtdiachi";
             this.txtdiachi.Size = new System.Drawing.Size(220, 25);
@@ -363,7 +265,7 @@
             this.txtemail.LineIdleColor = System.Drawing.Color.Gray;
             this.txtemail.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtemail.LineThickness = 3;
-            this.txtemail.Location = new System.Drawing.Point(453, 53);
+            this.txtemail.Location = new System.Drawing.Point(492, 53);
             this.txtemail.Margin = new System.Windows.Forms.Padding(4);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(220, 25);
@@ -405,7 +307,7 @@
             this.txtnhapmatim.LineIdleColor = System.Drawing.Color.Gray;
             this.txtnhapmatim.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtnhapmatim.LineThickness = 3;
-            this.txtnhapmatim.Location = new System.Drawing.Point(453, 85);
+            this.txtnhapmatim.Location = new System.Drawing.Point(492, 85);
             this.txtnhapmatim.Margin = new System.Windows.Forms.Padding(4);
             this.txtnhapmatim.Name = "txtnhapmatim";
             this.txtnhapmatim.Size = new System.Drawing.Size(220, 25);
@@ -414,20 +316,82 @@
             this.txtnhapmatim.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtnhapmatim.OnValueChanged += new System.EventHandler(this.txtnhapmatim_OnValueChanged);
             // 
-            // btfile
+            // labelControl1
             // 
-            this.btfile.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btfile.ImageOptions.Image")));
-            this.btfile.Location = new System.Drawing.Point(154, 229);
-            this.btfile.Name = "btfile";
-            this.btfile.Size = new System.Drawing.Size(83, 37);
-            this.btfile.TabIndex = 43;
-            this.btfile.Text = "File";
-            this.btfile.Click += new System.EventHandler(this.btfile_Click);
+            this.labelControl1.Location = new System.Drawing.Point(56, 32);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(81, 13);
+            this.labelControl1.TabIndex = 16;
+            this.labelControl1.Text = "Mã Khách Hàng :";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(52, 65);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(85, 13);
+            this.labelControl2.TabIndex = 17;
+            this.labelControl2.Text = "Tên Khách Hàng :";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(56, 102);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(27, 13);
+            this.labelControl3.TabIndex = 18;
+            this.labelControl3.Text = "SĐT :";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Location = new System.Drawing.Point(441, 32);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(44, 13);
+            this.labelControl4.TabIndex = 19;
+            this.labelControl4.Text = "Địa Chỉ  :";
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Location = new System.Drawing.Point(441, 65);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(31, 13);
+            this.labelControl5.TabIndex = 20;
+            this.labelControl5.Text = "Email :";
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Location = new System.Drawing.Point(412, 98);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(73, 13);
+            this.labelControl6.TabIndex = 21;
+            this.labelControl6.Text = "Nhập SDT Tìm :";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
+            this.groupBox1.Controls.Add(this.labelControl6);
+            this.groupBox1.Controls.Add(this.labelControl5);
+            this.groupBox1.Controls.Add(this.labelControl4);
+            this.groupBox1.Controls.Add(this.labelControl3);
+            this.groupBox1.Controls.Add(this.labelControl2);
+            this.groupBox1.Controls.Add(this.labelControl1);
+            this.groupBox1.Controls.Add(this.txtnhapmatim);
+            this.groupBox1.Controls.Add(this.txtsdt);
+            this.groupBox1.Controls.Add(this.txtemail);
+            this.groupBox1.Controls.Add(this.txtdiachi);
+            this.groupBox1.Controls.Add(this.txttenkh);
+            this.groupBox1.Controls.Add(this.txtmakh);
+            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(18, 66);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(730, 157);
+            this.groupBox1.TabIndex = 34;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Thông Tin Khách Hàng";
             // 
             // QLKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(797, 450);
             this.Controls.Add(this.btluu);
             this.Controls.Add(this.groupBox2);
@@ -444,9 +408,9 @@
             this.Text = "QLKhachHang";
             this.Load += new System.EventHandler(this.QLKhachHang_Load);
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -457,21 +421,6 @@
         private DevExpress.XtraEditors.SimpleButton btluu;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label8;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtngaymua;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtnhapmatim;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtsdt;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtemail;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtdiachi;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txttenkh;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtmakh;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label2;
         private DevExpress.XtraEditors.SimpleButton btxoa1;
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.SimpleButton btthem1;
@@ -480,5 +429,18 @@
         private DevExpress.XtraEditors.SimpleButton bttimkiem1;
         private DevExpress.XtraEditors.SimpleButton bttrove;
         private DevExpress.XtraEditors.SimpleButton btfile;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtmakh;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txttenkh;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtdiachi;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtemail;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtsdt;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtnhapmatim;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

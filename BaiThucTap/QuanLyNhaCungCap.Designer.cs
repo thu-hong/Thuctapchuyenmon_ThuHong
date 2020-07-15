@@ -53,7 +53,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.Controls.Add(this.btnSua);
             this.panel2.Controls.Add(this.btnthem);
             this.panel2.Controls.Add(this.txtsdt);
@@ -75,7 +75,7 @@
             this.btnSua.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnSua.ActiveForecolor = System.Drawing.Color.White;
             this.btnSua.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSua.BackColor = System.Drawing.Color.White;
+            this.btnSua.BackColor = System.Drawing.Color.Silver;
             this.btnSua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSua.BackgroundImage")));
             this.btnSua.ButtonText = "Sửa";
             this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -86,10 +86,10 @@
             this.btnSua.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnSua.IdleForecolor = System.Drawing.Color.Black;
             this.btnSua.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnSua.Location = new System.Drawing.Point(178, 216);
+            this.btnSua.Location = new System.Drawing.Point(178, 223);
             this.btnSua.Margin = new System.Windows.Forms.Padding(5);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(126, 41);
+            this.btnSua.Size = new System.Drawing.Size(126, 34);
             this.btnSua.TabIndex = 11;
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -101,7 +101,7 @@
             this.btnthem.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnthem.ActiveForecolor = System.Drawing.Color.White;
             this.btnthem.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnthem.BackColor = System.Drawing.Color.White;
+            this.btnthem.BackColor = System.Drawing.Color.Silver;
             this.btnthem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnthem.BackgroundImage")));
             this.btnthem.ButtonText = "Thêm";
             this.btnthem.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -112,10 +112,10 @@
             this.btnthem.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnthem.IdleForecolor = System.Drawing.Color.Black;
             this.btnthem.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnthem.Location = new System.Drawing.Point(28, 216);
+            this.btnthem.Location = new System.Drawing.Point(28, 223);
             this.btnthem.Margin = new System.Windows.Forms.Padding(5);
             this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(126, 41);
+            this.btnthem.Size = new System.Drawing.Size(120, 34);
             this.btnthem.TabIndex = 10;
             this.btnthem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
@@ -185,7 +185,7 @@
             this.dataGridview1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridview1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -201,7 +201,7 @@
             this.xoa});
             this.dataGridview1.DoubleBuffered = true;
             this.dataGridview1.EnableHeadersVisualStyles = false;
-            this.dataGridview1.HeaderBgColor = System.Drawing.Color.Teal;
+            this.dataGridview1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.dataGridview1.HeaderForeColor = System.Drawing.Color.White;
             this.dataGridview1.Location = new System.Drawing.Point(8, 8);
             this.dataGridview1.Name = "dataGridview1";
@@ -249,6 +249,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(911, 371);
             this.Controls.Add(this.dataGridview1);
             this.Controls.Add(this.panel2);

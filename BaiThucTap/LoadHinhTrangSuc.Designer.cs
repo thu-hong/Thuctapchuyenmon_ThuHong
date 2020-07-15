@@ -56,13 +56,13 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Mã Trang Sức";
             // 
             // txtMaTS
             // 
-            this.txtMaTS.Location = new System.Drawing.Point(54, 10);
+            this.txtMaTS.Location = new System.Drawing.Point(102, 10);
             this.txtMaTS.Name = "txtMaTS";
             this.txtMaTS.Size = new System.Drawing.Size(75, 20);
             this.txtMaTS.TabIndex = 2;
@@ -70,7 +70,7 @@
             // loadhinh
             // 
             this.loadhinh.BackColor = System.Drawing.Color.White;
-            this.loadhinh.Location = new System.Drawing.Point(183, 10);
+            this.loadhinh.Location = new System.Drawing.Point(232, 10);
             this.loadhinh.Name = "loadhinh";
             this.loadhinh.Size = new System.Drawing.Size(171, 130);
             this.loadhinh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -81,6 +81,8 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.maTSDataGridViewTextBoxColumn,
@@ -91,9 +93,10 @@
             this.maLoaiDataGridViewTextBoxColumn,
             this.hinhAnhDataGridViewImageColumn});
             this.dataGridView1.DataSource = this.trangSucBindingSource;
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.dataGridView1.Location = new System.Drawing.Point(0, 167);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(747, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(748, 100);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -151,7 +154,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(54, 107);
+            this.btnSua.Location = new System.Drawing.Point(102, 99);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 23);
             this.btnSua.TabIndex = 5;
@@ -172,7 +175,8 @@
             this.AcceptButton = this.btnSua;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(930, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(751, 275);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.loadhinh);
@@ -180,6 +184,7 @@
             this.Controls.Add(this.label1);
             this.Name = "LoadHinhTrangSuc";
             this.Text = "LoadHinhTrangSuc";
+            this.TransparencyKey = System.Drawing.Color.Black;
             this.Load += new System.EventHandler(this.LoadHinhTrangSuc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.loadhinh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

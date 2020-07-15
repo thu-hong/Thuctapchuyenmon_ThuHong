@@ -89,6 +89,7 @@ namespace BaiThucTap
                 MessageBox.Show("Bạn Không có quyền");
                 return;
             }
+           
         }
 
         private void TonKho_Click(object sender, EventArgs e)
@@ -97,6 +98,11 @@ namespace BaiThucTap
             {
                 MessageBox.Show("Bạn Không có quyền");
                 return;
+            }
+            else
+            {
+                HangTon f10 = new HangTon();
+                f10.ShowDialog();
             }
         }
 
@@ -164,6 +170,12 @@ namespace BaiThucTap
         private void LienHe_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            khachhangdangnhap f9 = new khachhangdangnhap();
+            f9.ShowDialog();
         }
     }
 }

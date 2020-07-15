@@ -54,6 +54,7 @@
             this.LienHeGmail = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.hinhFb = new System.Windows.Forms.PictureBox();
             this.hinhZalo = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -62,6 +63,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hinhFb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hinhZalo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -291,11 +293,23 @@
             this.hinhZalo.TabStop = false;
             this.hinhZalo.Click += new System.EventHandler(this.hinhZalo_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(1187, 226);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(53, 48);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 6;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
             // TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1241, 522);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.hinhZalo);
             this.Controls.Add(this.hinhFb);
             this.Controls.Add(this.panel2);
@@ -314,6 +328,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hinhFb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hinhZalo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -345,6 +360,7 @@
         private System.Windows.Forms.PictureBox hinhFb;
         private System.Windows.Forms.PictureBox hinhZalo;
         private System.Windows.Forms.Panel panelcontrol;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 

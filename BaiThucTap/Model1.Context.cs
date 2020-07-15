@@ -113,6 +113,34 @@ namespace BaiThucTap
             return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<getmahd2_Result>("[quanlytrangsucEntities1].[getmahd2]()");
         }
     
+        [DbFunction("quanlytrangsucEntities1", "hangtonkho")]
+        public virtual IQueryable<hangtonkho_Result> hangtonkho(Nullable<int> thang, Nullable<int> nam)
+        {
+            var thangParameter = thang.HasValue ?
+                new ObjectParameter("thang", thang) :
+                new ObjectParameter("thang", typeof(int));
+    
+            var namParameter = nam.HasValue ?
+                new ObjectParameter("nam", nam) :
+                new ObjectParameter("nam", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<hangtonkho_Result>("[quanlytrangsucEntities1].[hangtonkho](@thang, @nam)", thangParameter, namParameter);
+        }
+    
+        [DbFunction("quanlytrangsucEntities1", "HangTonKho4")]
+        public virtual IQueryable<HangTonKho4_Result> HangTonKho4(Nullable<int> thang, Nullable<int> nam)
+        {
+            var thangParameter = thang.HasValue ?
+                new ObjectParameter("thang", thang) :
+                new ObjectParameter("thang", typeof(int));
+    
+            var namParameter = nam.HasValue ?
+                new ObjectParameter("nam", nam) :
+                new ObjectParameter("nam", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<HangTonKho4_Result>("[quanlytrangsucEntities1].[HangTonKho4](@thang, @nam)", thangParameter, namParameter);
+        }
+    
         public virtual int deleHD1(string mahd)
         {
             var mahdParameter = mahd != null ?
@@ -173,6 +201,19 @@ namespace BaiThucTap
                 new ObjectParameter("nam", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<dttheothang1_Result>("dttheothang1", thangParameter, namParameter);
+        }
+    
+        public virtual ObjectResult<hangtonkhoaaa_Result> hangtonkhoaaa(Nullable<int> thang, Nullable<int> nam)
+        {
+            var thangParameter = thang.HasValue ?
+                new ObjectParameter("thang", thang) :
+                new ObjectParameter("thang", typeof(int));
+    
+            var namParameter = nam.HasValue ?
+                new ObjectParameter("nam", nam) :
+                new ObjectParameter("nam", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<hangtonkhoaaa_Result>("hangtonkhoaaa", thangParameter, namParameter);
         }
     
         public virtual ObjectResult<hdtrangsucchuathanhtoan_Result> hdtrangsucchuathanhtoan()
@@ -406,6 +447,19 @@ namespace BaiThucTap
                 new ObjectParameter("mancc", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("xoancc", manccParameter);
+        }
+    
+        public virtual ObjectResult<xuathangtonkho_Result> xuathangtonkho(Nullable<int> thang, Nullable<int> nam)
+        {
+            var thangParameter = thang.HasValue ?
+                new ObjectParameter("thang", thang) :
+                new ObjectParameter("thang", typeof(int));
+    
+            var namParameter = nam.HasValue ?
+                new ObjectParameter("nam", nam) :
+                new ObjectParameter("nam", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<xuathangtonkho_Result>("xuathangtonkho", thangParameter, namParameter);
         }
     }
 }

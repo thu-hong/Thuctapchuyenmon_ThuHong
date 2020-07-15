@@ -21,8 +21,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>0.33208in</Top>
-        <Left>0.7175in</Left>
+        <Top>0.13416in</Top>
+        <Left>1.78in</Left>
         <Height>0.32292in</Height>
         <Width>6.91667in</Width>
         <Style>
@@ -553,7 +553,7 @@
         <Top>1.39458in</Top>
         <Left>0.36333in</Left>
         <Height>0.55208in</Height>
-        <Width>9.58333in</Width>
+        <Width>9.58334in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>

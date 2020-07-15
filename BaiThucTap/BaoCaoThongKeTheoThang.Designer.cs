@@ -30,15 +30,25 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.dttheothang1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dttheothang = new BaiThucTap.dttheothang();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dttheothang = new BaiThucTap.dttheothang();
-            this.dttheothang1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dttheothang1TableAdapter = new BaiThucTap.dttheothangTableAdapters.dttheothang1TableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dttheothang)).BeginInit();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.dttheothang1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dttheothang)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dttheothang1BindingSource
+            // 
+            this.dttheothang1BindingSource.DataMember = "dttheothang1";
+            this.dttheothang1BindingSource.DataSource = this.dttheothang;
+            // 
+            // dttheothang
+            // 
+            this.dttheothang.DataSetName = "dttheothang";
+            this.dttheothang.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label2
             // 
@@ -59,6 +69,10 @@
             this.dateTimePicker2.TabIndex = 4;
             this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
+            // dttheothang1TableAdapter
+            // 
+            this.dttheothang1TableAdapter.ClearBeforeFill = true;
+            // 
             // reportViewer1
             // 
             reportDataSource1.Name = "DataSet1";
@@ -68,22 +82,8 @@
             this.reportViewer1.Location = new System.Drawing.Point(12, 93);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(1010, 331);
+            this.reportViewer1.Size = new System.Drawing.Size(997, 331);
             this.reportViewer1.TabIndex = 6;
-            // 
-            // dttheothang
-            // 
-            this.dttheothang.DataSetName = "dttheothang";
-            this.dttheothang.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dttheothang1BindingSource
-            // 
-            this.dttheothang1BindingSource.DataMember = "dttheothang1";
-            this.dttheothang1BindingSource.DataSource = this.dttheothang;
-            // 
-            // dttheothang1TableAdapter
-            // 
-            this.dttheothang1TableAdapter.ClearBeforeFill = true;
             // 
             // BaoCaoThongKeTheoThang
             // 
@@ -97,8 +97,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BaoCaoThongKeTheoThang";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dttheothang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dttheothang1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dttheothang)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -107,9 +107,9 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource dttheothang1BindingSource;
         private dttheothang dttheothang;
         private dttheothangTableAdapters.dttheothang1TableAdapter dttheothang1TableAdapter;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }
