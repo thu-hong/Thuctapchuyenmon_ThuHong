@@ -186,6 +186,7 @@
             this.QuanLyHoaDon.Name = "QuanLyHoaDon";
             this.QuanLyHoaDon.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.QuanLyHoaDon.Text = "Hóa Đơn";
+            this.QuanLyHoaDon.Click += new System.EventHandler(this.QuanLyHoaDon_Click);
             // 
             // DongGoiSanPham
             // 
@@ -230,7 +231,7 @@
             // 
             this.NhapKho.Name = "NhapKho";
             this.NhapKho.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.NhapKho.Text = "Nhập Kho";
+            this.NhapKho.Text = "Nhập Trang Sức";
             this.NhapKho.Click += new System.EventHandler(this.NhapKho_Click);
             // 
             // TonKho

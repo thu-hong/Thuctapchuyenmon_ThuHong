@@ -30,16 +30,29 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HangTon));
+            this.hangtonkhoaaaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hangkho = new BaiThucTap.hangkho();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.hangkho = new BaiThucTap.hangkho();
-            this.hangtonkhoaaaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hangtonkhoaaaTableAdapter = new BaiThucTap.hangkhoTableAdapters.hangtonkhoaaaTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.hangkho)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.hangtonkhoaaaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hangkho)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // hangtonkhoaaaBindingSource
+            // 
+            this.hangtonkhoaaaBindingSource.DataMember = "hangtonkhoaaa";
+            this.hangtonkhoaaaBindingSource.DataSource = this.hangkho;
+            // 
+            // hangkho
+            // 
+            this.hangkho.DataSetName = "hangkho";
+            this.hangkho.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dateTimePicker1
             // 
@@ -57,21 +70,11 @@
             reportDataSource1.Value = this.hangtonkhoaaaBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "BaiThucTap.hangtonkho11.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(34, 105);
+            this.reportViewer1.Location = new System.Drawing.Point(12, 105);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(705, 297);
+            this.reportViewer1.Size = new System.Drawing.Size(1023, 391);
             this.reportViewer1.TabIndex = 1;
-            // 
-            // hangkho
-            // 
-            this.hangkho.DataSetName = "hangkho";
-            this.hangkho.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // hangtonkhoaaaBindingSource
-            // 
-            this.hangtonkhoaaaBindingSource.DataMember = "hangtonkhoaaa";
-            this.hangtonkhoaaaBindingSource.DataSource = this.hangkho;
             // 
             // hangtonkhoaaaTableAdapter
             // 
@@ -97,12 +100,23 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "TÌM SỐ LƯỢNG TỒN KHO CỦA THÁNG ";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(546, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(418, 91);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // HangTon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1047, 508);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.reportViewer1);
@@ -110,8 +124,9 @@
             this.Name = "HangTon";
             this.Text = "HangTon";
             this.Load += new System.EventHandler(this.HangTon_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.hangkho)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hangtonkhoaaaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hangkho)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,5 +141,6 @@
         private hangkhoTableAdapters.hangtonkhoaaaTableAdapter hangtonkhoaaaTableAdapter;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

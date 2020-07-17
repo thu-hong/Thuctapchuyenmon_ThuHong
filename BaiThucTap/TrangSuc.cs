@@ -21,5 +21,7 @@ namespace BaiThucTap
         public string DonVi { get; set; }
         public string MaLoai { get; set; }
         public byte[] HinhAnh { get; set; }
+    
+        public virtual LoaiTrangSuc LoaiTrangSuc { get; set; }
     }
 }

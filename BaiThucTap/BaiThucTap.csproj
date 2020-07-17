@@ -146,6 +146,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSetchitietphieunhap.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetchitietphieunhap.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSetHoaDon.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -179,19 +184,10 @@
     <Compile Include="dtngay1_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="dtngay_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="dtthang1_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="dtthang_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="dttheongay1_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="dttheongay_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="dttheothang.Designer.cs">
@@ -200,9 +196,6 @@
       <DependentUpon>dttheothang.xsd</DependentUpon>
     </Compile>
     <Compile Include="dttheothang1_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="dttheothang_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="frmTrangSuc.cs">
@@ -507,6 +500,17 @@
     <None Include="DataSet2.xss">
       <DependentUpon>DataSet2.xsd</DependentUpon>
     </None>
+    <None Include="DataSetchitietphieunhap.xsc">
+      <DependentUpon>DataSetchitietphieunhap.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetchitietphieunhap.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetchitietphieunhap.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetchitietphieunhap.xss">
+      <DependentUpon>DataSetchitietphieunhap.xsd</DependentUpon>
+    </None>
     <None Include="DataSetHoaDon.xsc">
       <DependentUpon>DataSetHoaDon.xsd</DependentUpon>
     </None>
@@ -551,10 +555,6 @@
     <None Include="dttheothang.xss">
       <DependentUpon>dttheothang.xsd</DependentUpon>
     </None>
-    <EntityDeploy Include="Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <None Include="hangkho.xsc">
       <DependentUpon>hangkho.xsd</DependentUpon>
     </None>
@@ -566,6 +566,10 @@
     <None Include="hangkho.xss">
       <DependentUpon>hangkho.xsd</DependentUpon>
     </None>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
     <None Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>

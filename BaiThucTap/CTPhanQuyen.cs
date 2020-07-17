@@ -14,7 +14,7 @@ namespace BaiThucTap
     
     public partial class CTPhanQuyen
     {
-        public string MaNV { get; set; }
         public string MaPQ { get; set; }
+        public string MaNV { get; set; }
     }
 }

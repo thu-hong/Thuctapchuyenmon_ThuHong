@@ -19,5 +19,7 @@ namespace BaiThucTap
         public Nullable<System.DateTime> Ngay { get; set; }
         public Nullable<double> SoTien { get; set; }
         public string LiDo { get; set; }
+    
+        public virtual NhanVien NhanVien { get; set; }
     }
 }

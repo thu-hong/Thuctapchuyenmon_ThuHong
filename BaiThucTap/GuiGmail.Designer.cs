@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GuiGmail));
-            this.label1 = new System.Windows.Forms.Label();
             this.btdinhkem = new DevExpress.XtraEditors.SimpleButton();
             this.btGuiNhieuMail = new DevExpress.XtraEditors.SimpleButton();
             this.rdoGuiNhieuNguoi = new System.Windows.Forms.RadioButton();
@@ -42,30 +41,14 @@
             this.txtFile = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.richtinnhan = new System.Windows.Forms.RichTextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lbthongbao = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(109, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(233, 31);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "GỬI THƯ GMAIL";
             // 
             // btdinhkem
             // 
@@ -74,7 +57,7 @@
             this.btdinhkem.Appearance.Options.UseFont = true;
             this.btdinhkem.Appearance.Options.UseForeColor = true;
             this.btdinhkem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btdinhkem.ImageOptions.Image")));
-            this.btdinhkem.Location = new System.Drawing.Point(371, 186);
+            this.btdinhkem.Location = new System.Drawing.Point(358, 268);
             this.btdinhkem.Name = "btdinhkem";
             this.btdinhkem.Size = new System.Drawing.Size(94, 31);
             this.btdinhkem.TabIndex = 28;
@@ -88,7 +71,7 @@
             this.btGuiNhieuMail.Appearance.Options.UseFont = true;
             this.btGuiNhieuMail.Appearance.Options.UseForeColor = true;
             this.btGuiNhieuMail.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btGuiNhieuMail.ImageOptions.Image")));
-            this.btGuiNhieuMail.Location = new System.Drawing.Point(371, 41);
+            this.btGuiNhieuMail.Location = new System.Drawing.Point(358, 123);
             this.btGuiNhieuMail.Name = "btGuiNhieuMail";
             this.btGuiNhieuMail.Size = new System.Drawing.Size(94, 30);
             this.btGuiNhieuMail.TabIndex = 35;
@@ -98,11 +81,11 @@
             // rdoGuiNhieuNguoi
             // 
             this.rdoGuiNhieuNguoi.AutoSize = true;
-            this.rdoGuiNhieuNguoi.BackColor = System.Drawing.SystemColors.Control;
-            this.rdoGuiNhieuNguoi.ForeColor = System.Drawing.Color.Red;
-            this.rdoGuiNhieuNguoi.Location = new System.Drawing.Point(236, 24);
+            this.rdoGuiNhieuNguoi.BackColor = System.Drawing.Color.Blue;
+            this.rdoGuiNhieuNguoi.ForeColor = System.Drawing.Color.White;
+            this.rdoGuiNhieuNguoi.Location = new System.Drawing.Point(223, 106);
             this.rdoGuiNhieuNguoi.Name = "rdoGuiNhieuNguoi";
-            this.rdoGuiNhieuNguoi.Size = new System.Drawing.Size(116, 19);
+            this.rdoGuiNhieuNguoi.Size = new System.Drawing.Size(99, 17);
             this.rdoGuiNhieuNguoi.TabIndex = 39;
             this.rdoGuiNhieuNguoi.Text = "Gửi nhiều người";
             this.rdoGuiNhieuNguoi.UseVisualStyleBackColor = false;
@@ -111,12 +94,12 @@
             // rdoGuiMotNguoi
             // 
             this.rdoGuiMotNguoi.AutoSize = true;
-            this.rdoGuiMotNguoi.BackColor = System.Drawing.SystemColors.Control;
+            this.rdoGuiMotNguoi.BackColor = System.Drawing.Color.Blue;
             this.rdoGuiMotNguoi.Checked = true;
-            this.rdoGuiMotNguoi.ForeColor = System.Drawing.Color.Red;
-            this.rdoGuiMotNguoi.Location = new System.Drawing.Point(115, 24);
+            this.rdoGuiMotNguoi.ForeColor = System.Drawing.Color.White;
+            this.rdoGuiMotNguoi.Location = new System.Drawing.Point(102, 106);
             this.rdoGuiMotNguoi.Name = "rdoGuiMotNguoi";
-            this.rdoGuiMotNguoi.Size = new System.Drawing.Size(105, 19);
+            this.rdoGuiMotNguoi.Size = new System.Drawing.Size(90, 17);
             this.rdoGuiMotNguoi.TabIndex = 38;
             this.rdoGuiMotNguoi.TabStop = true;
             this.rdoGuiMotNguoi.Text = "Gửi một người";
@@ -127,27 +110,27 @@
             // 
             this.txtTo.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtTo.ForeColor = System.Drawing.Color.Red;
-            this.txtTo.Location = new System.Drawing.Point(111, 47);
+            this.txtTo.Location = new System.Drawing.Point(98, 129);
             this.txtTo.Name = "txtTo";
-            this.txtTo.Size = new System.Drawing.Size(241, 22);
+            this.txtTo.Size = new System.Drawing.Size(241, 20);
             this.txtTo.TabIndex = 25;
             // 
             // txtsubject
             // 
             this.txtsubject.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtsubject.ForeColor = System.Drawing.Color.Red;
-            this.txtsubject.Location = new System.Drawing.Point(111, 73);
+            this.txtsubject.Location = new System.Drawing.Point(98, 155);
             this.txtsubject.Name = "txtsubject";
-            this.txtsubject.Size = new System.Drawing.Size(241, 22);
+            this.txtsubject.Size = new System.Drawing.Size(241, 20);
             this.txtsubject.TabIndex = 26;
             // 
             // txttendangnhap
             // 
             this.txttendangnhap.BorderColor = System.Drawing.Color.SeaGreen;
             this.txttendangnhap.ForeColor = System.Drawing.Color.Black;
-            this.txttendangnhap.Location = new System.Drawing.Point(111, 99);
+            this.txttendangnhap.Location = new System.Drawing.Point(98, 181);
             this.txttendangnhap.Name = "txttendangnhap";
-            this.txttendangnhap.Size = new System.Drawing.Size(241, 22);
+            this.txttendangnhap.Size = new System.Drawing.Size(241, 20);
             this.txttendangnhap.TabIndex = 23;
             this.txttendangnhap.Text = "nguyenthithuhong7399@gmail.com";
             // 
@@ -155,10 +138,10 @@
             // 
             this.txtmatkhau.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtmatkhau.ForeColor = System.Drawing.Color.Black;
-            this.txtmatkhau.Location = new System.Drawing.Point(111, 125);
+            this.txtmatkhau.Location = new System.Drawing.Point(98, 207);
             this.txtmatkhau.Name = "txtmatkhau";
             this.txtmatkhau.PasswordChar = '*';
-            this.txtmatkhau.Size = new System.Drawing.Size(241, 22);
+            this.txtmatkhau.Size = new System.Drawing.Size(241, 20);
             this.txtmatkhau.TabIndex = 24;
             this.txtmatkhau.Text = "5851071025";
             // 
@@ -166,7 +149,7 @@
             // 
             this.btgui.Appearance.ForeColor = System.Drawing.Color.Red;
             this.btgui.Appearance.Options.UseForeColor = true;
-            this.btgui.Location = new System.Drawing.Point(111, 159);
+            this.btgui.Location = new System.Drawing.Point(98, 241);
             this.btgui.Name = "btgui";
             this.btgui.Size = new System.Drawing.Size(75, 23);
             this.btgui.TabIndex = 33;
@@ -177,15 +160,15 @@
             // 
             this.txtFile.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtFile.ForeColor = System.Drawing.Color.Red;
-            this.txtFile.Location = new System.Drawing.Point(111, 192);
+            this.txtFile.Location = new System.Drawing.Point(98, 274);
             this.txtFile.Name = "txtFile";
-            this.txtFile.Size = new System.Drawing.Size(241, 22);
+            this.txtFile.Size = new System.Drawing.Size(241, 20);
             this.txtFile.TabIndex = 22;
             // 
             // richtinnhan
             // 
             this.richtinnhan.ForeColor = System.Drawing.Color.Red;
-            this.richtinnhan.Location = new System.Drawing.Point(111, 218);
+            this.richtinnhan.Location = new System.Drawing.Point(98, 300);
             this.richtinnhan.Name = "richtinnhan";
             this.richtinnhan.Size = new System.Drawing.Size(241, 111);
             this.richtinnhan.TabIndex = 34;
@@ -195,41 +178,11 @@
             // 
             this.comboBox1.ForeColor = System.Drawing.Color.Red;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(111, 346);
+            this.comboBox1.Location = new System.Drawing.Point(98, 428);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(241, 23);
+            this.comboBox1.Size = new System.Drawing.Size(241, 21);
             this.comboBox1.TabIndex = 40;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
-            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox1.Controls.Add(this.lbthongbao);
-            this.groupBox1.Controls.Add(this.labelControl5);
-            this.groupBox1.Controls.Add(this.labelControl4);
-            this.groupBox1.Controls.Add(this.labelControl3);
-            this.groupBox1.Controls.Add(this.labelControl2);
-            this.groupBox1.Controls.Add(this.labelControl1);
-            this.groupBox1.Controls.Add(this.txtmatkhau);
-            this.groupBox1.Controls.Add(this.btGuiNhieuMail);
-            this.groupBox1.Controls.Add(this.txttendangnhap);
-            this.groupBox1.Controls.Add(this.btdinhkem);
-            this.groupBox1.Controls.Add(this.richtinnhan);
-            this.groupBox1.Controls.Add(this.txtFile);
-            this.groupBox1.Controls.Add(this.rdoGuiMotNguoi);
-            this.groupBox1.Controls.Add(this.txtsubject);
-            this.groupBox1.Controls.Add(this.btgui);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.txtTo);
-            this.groupBox1.Controls.Add(this.rdoGuiNhieuNguoi);
-            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Location = new System.Drawing.Point(12, 79);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(524, 387);
-            this.groupBox1.TabIndex = 43;
-            this.groupBox1.TabStop = false;
             // 
             // lbthongbao
             // 
@@ -237,7 +190,7 @@
             this.lbthongbao.Appearance.ForeColor = System.Drawing.Color.Black;
             this.lbthongbao.Appearance.Options.UseFont = true;
             this.lbthongbao.Appearance.Options.UseForeColor = true;
-            this.lbthongbao.Location = new System.Drawing.Point(32, 346);
+            this.lbthongbao.Location = new System.Drawing.Point(19, 428);
             this.lbthongbao.Name = "lbthongbao";
             this.lbthongbao.Size = new System.Drawing.Size(46, 15);
             this.lbthongbao.TabIndex = 48;
@@ -249,7 +202,7 @@
             this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(32, 221);
+            this.labelControl5.Location = new System.Drawing.Point(19, 303);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(55, 15);
             this.labelControl5.TabIndex = 45;
@@ -261,7 +214,7 @@
             this.labelControl4.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(32, 132);
+            this.labelControl4.Location = new System.Drawing.Point(19, 214);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(69, 15);
             this.labelControl4.TabIndex = 47;
@@ -273,7 +226,7 @@
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(32, 106);
+            this.labelControl3.Location = new System.Drawing.Point(19, 188);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(64, 15);
             this.labelControl3.TabIndex = 46;
@@ -285,7 +238,7 @@
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(32, 76);
+            this.labelControl2.Location = new System.Drawing.Point(19, 158);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(48, 15);
             this.labelControl2.TabIndex = 45;
@@ -297,56 +250,60 @@
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(32, 47);
+            this.labelControl1.Location = new System.Drawing.Point(19, 129);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(21, 15);
             this.labelControl1.TabIndex = 44;
             this.labelControl1.Text = "To :";
             // 
-            // groupBox2
+            // labelControl6
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.White;
-            this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 9);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(524, 78);
-            this.groupBox2.TabIndex = 50;
-            this.groupBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(83, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 37;
-            this.pictureBox1.TabStop = false;
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Appearance.Options.UseForeColor = true;
+            this.labelControl6.Location = new System.Drawing.Point(185, 23);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(116, 24);
+            this.labelControl6.TabIndex = 38;
+            this.labelControl6.Text = "GỬI GMAIL";
             // 
             // GuiGmail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(942, 468);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(514, 466);
+            this.Controls.Add(this.lbthongbao);
+            this.Controls.Add(this.labelControl6);
+            this.Controls.Add(this.labelControl5);
+            this.Controls.Add(this.labelControl4);
+            this.Controls.Add(this.txtmatkhau);
+            this.Controls.Add(this.labelControl3);
+            this.Controls.Add(this.rdoGuiNhieuNguoi);
+            this.Controls.Add(this.labelControl2);
+            this.Controls.Add(this.txtTo);
+            this.Controls.Add(this.labelControl1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btgui);
+            this.Controls.Add(this.btGuiNhieuMail);
+            this.Controls.Add(this.txtsubject);
+            this.Controls.Add(this.txttendangnhap);
+            this.Controls.Add(this.rdoGuiMotNguoi);
+            this.Controls.Add(this.btdinhkem);
+            this.Controls.Add(this.txtFile);
+            this.Controls.Add(this.richtinnhan);
             this.Name = "GuiGmail";
             this.Text = "GuiGmail";
             this.Load += new System.EventHandler(this.GuiGmail_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.SimpleButton btdinhkem;
         private DevExpress.XtraEditors.SimpleButton btGuiNhieuMail;
         private System.Windows.Forms.RadioButton rdoGuiNhieuNguoi;
@@ -359,14 +316,12 @@
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtFile;
         private System.Windows.Forms.RichTextBox richtinnhan;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
         private DevExpress.XtraEditors.LabelControl lbthongbao;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
     }
 }

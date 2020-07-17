@@ -53,16 +53,6 @@ namespace BaiThucTap
             return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<dsnhanvien_Result>("[quanlytrangsucEntities1].[dsnhanvien]()");
         }
     
-        [DbFunction("quanlytrangsucEntities1", "dtngay")]
-        public virtual IQueryable<dtngay_Result> dtngay(Nullable<System.DateTime> ngay)
-        {
-            var ngayParameter = ngay.HasValue ?
-                new ObjectParameter("ngay", ngay) :
-                new ObjectParameter("ngay", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<dtngay_Result>("[quanlytrangsucEntities1].[dtngay](@ngay)", ngayParameter);
-        }
-    
         [DbFunction("quanlytrangsucEntities1", "dtngay1")]
         public virtual IQueryable<dtngay1_Result> dtngay1(Nullable<System.DateTime> ngay)
         {
@@ -71,20 +61,6 @@ namespace BaiThucTap
                 new ObjectParameter("ngay", typeof(System.DateTime));
     
             return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<dtngay1_Result>("[quanlytrangsucEntities1].[dtngay1](@ngay)", ngayParameter);
-        }
-    
-        [DbFunction("quanlytrangsucEntities1", "dtthang")]
-        public virtual IQueryable<dtthang_Result> dtthang(Nullable<int> thang, Nullable<int> nam)
-        {
-            var thangParameter = thang.HasValue ?
-                new ObjectParameter("thang", thang) :
-                new ObjectParameter("thang", typeof(int));
-    
-            var namParameter = nam.HasValue ?
-                new ObjectParameter("nam", nam) :
-                new ObjectParameter("nam", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<dtthang_Result>("[quanlytrangsucEntities1].[dtthang](@thang, @nam)", thangParameter, namParameter);
         }
     
         [DbFunction("quanlytrangsucEntities1", "dtthang1")]
@@ -159,13 +135,13 @@ namespace BaiThucTap
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("deleteNhanVien", manvParameter);
         }
     
-        public virtual ObjectResult<dttheongay_Result> dttheongay(Nullable<System.DateTime> ngay)
+        public virtual int dttheongay(Nullable<System.DateTime> ngay)
         {
             var ngayParameter = ngay.HasValue ?
                 new ObjectParameter("ngay", ngay) :
                 new ObjectParameter("ngay", typeof(System.DateTime));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<dttheongay_Result>("dttheongay", ngayParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("dttheongay", ngayParameter);
         }
     
         public virtual ObjectResult<dttheongay1_Result> dttheongay1(Nullable<System.DateTime> ngay)
@@ -175,19 +151,6 @@ namespace BaiThucTap
                 new ObjectParameter("ngay", typeof(System.DateTime));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<dttheongay1_Result>("dttheongay1", ngayParameter);
-        }
-    
-        public virtual ObjectResult<dttheothang_Result> dttheothang(Nullable<int> thang, Nullable<int> nam)
-        {
-            var thangParameter = thang.HasValue ?
-                new ObjectParameter("thang", thang) :
-                new ObjectParameter("thang", typeof(int));
-    
-            var namParameter = nam.HasValue ?
-                new ObjectParameter("nam", nam) :
-                new ObjectParameter("nam", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<dttheothang_Result>("dttheothang", thangParameter, namParameter);
         }
     
         public virtual ObjectResult<dttheothang1_Result> dttheothang1(Nullable<int> thang, Nullable<int> nam)
@@ -362,21 +325,50 @@ namespace BaiThucTap
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_upgraddiagrams");
         }
     
-        public virtual int themHD1(string makh, string maud, string username)
+        public virtual int themCTNP(string maPN, string maTS, Nullable<int> soluong, Nullable<double> gianhap, string maLoai, string donvi)
         {
-            var makhParameter = makh != null ?
-                new ObjectParameter("makh", makh) :
-                new ObjectParameter("makh", typeof(string));
+            var maPNParameter = maPN != null ?
+                new ObjectParameter("MaPN", maPN) :
+                new ObjectParameter("MaPN", typeof(string));
+    
+            var maTSParameter = maTS != null ?
+                new ObjectParameter("MaTS", maTS) :
+                new ObjectParameter("MaTS", typeof(string));
+    
+            var soluongParameter = soluong.HasValue ?
+                new ObjectParameter("soluong", soluong) :
+                new ObjectParameter("soluong", typeof(int));
+    
+            var gianhapParameter = gianhap.HasValue ?
+                new ObjectParameter("gianhap", gianhap) :
+                new ObjectParameter("gianhap", typeof(double));
+    
+            var maLoaiParameter = maLoai != null ?
+                new ObjectParameter("MaLoai", maLoai) :
+                new ObjectParameter("MaLoai", typeof(string));
+    
+            var donviParameter = donvi != null ?
+                new ObjectParameter("donvi", donvi) :
+                new ObjectParameter("donvi", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("themCTNP", maPNParameter, maTSParameter, soluongParameter, gianhapParameter, maLoaiParameter, donviParameter);
+        }
+    
+        public virtual int themHD3(string username, string maud, string makh)
+        {
+            var usernameParameter = username != null ?
+                new ObjectParameter("username", username) :
+                new ObjectParameter("username", typeof(string));
     
             var maudParameter = maud != null ?
                 new ObjectParameter("maud", maud) :
                 new ObjectParameter("maud", typeof(string));
     
-            var usernameParameter = username != null ?
-                new ObjectParameter("username", username) :
-                new ObjectParameter("username", typeof(string));
+            var makhParameter = makh != null ?
+                new ObjectParameter("makh", makh) :
+                new ObjectParameter("makh", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("themHD1", makhParameter, maudParameter, usernameParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("themHD3", usernameParameter, maudParameter, makhParameter);
         }
     
         public virtual int themncc(string tenncc, string diachi, Nullable<int> sdt)
@@ -396,29 +388,7 @@ namespace BaiThucTap
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("themncc", tennccParameter, diachiParameter, sdtParameter);
         }
     
-        public virtual ObjectResult<TraCuu_LichSuMua_Result> TraCuu_LichSuMua(string soDienThoai)
-        {
-            var soDienThoaiParameter = soDienThoai != null ?
-                new ObjectParameter("soDienThoai", soDienThoai) :
-                new ObjectParameter("soDienThoai", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<TraCuu_LichSuMua_Result>("TraCuu_LichSuMua", soDienThoaiParameter);
-        }
-    
-        public virtual int update_Soluongton(string maTS, Nullable<int> soluongTon)
-        {
-            var maTSParameter = maTS != null ?
-                new ObjectParameter("MaTS", maTS) :
-                new ObjectParameter("MaTS", typeof(string));
-    
-            var soluongTonParameter = soluongTon.HasValue ?
-                new ObjectParameter("SoluongTon", soluongTon) :
-                new ObjectParameter("SoluongTon", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("update_Soluongton", maTSParameter, soluongTonParameter);
-        }
-    
-        public virtual int update_Soluongton1(string maTS, Nullable<int> soLuong)
+        public virtual int thoigianthuc(string maTS, Nullable<int> soLuong)
         {
             var maTSParameter = maTS != null ?
                 new ObjectParameter("MaTS", maTS) :
@@ -428,7 +398,42 @@ namespace BaiThucTap
                 new ObjectParameter("SoLuong", soLuong) :
                 new ObjectParameter("SoLuong", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("update_Soluongton1", maTSParameter, soLuongParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("thoigianthuc", maTSParameter, soLuongParameter);
+        }
+    
+        public virtual ObjectResult<TraCuu_LichSuMua_Result> TraCuu_LichSuMua(string soDienThoai)
+        {
+            var soDienThoaiParameter = soDienThoai != null ?
+                new ObjectParameter("soDienThoai", soDienThoai) :
+                new ObjectParameter("soDienThoai", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<TraCuu_LichSuMua_Result>("TraCuu_LichSuMua", soDienThoaiParameter);
+        }
+    
+        public virtual int updateSL(Nullable<int> ma, Nullable<int> sL)
+        {
+            var maParameter = ma.HasValue ?
+                new ObjectParameter("ma", ma) :
+                new ObjectParameter("ma", typeof(int));
+    
+            var sLParameter = sL.HasValue ?
+                new ObjectParameter("SL", sL) :
+                new ObjectParameter("SL", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("updateSL", maParameter, sLParameter);
+        }
+    
+        public virtual int updateSL1(string ma, Nullable<int> sL)
+        {
+            var maParameter = ma != null ?
+                new ObjectParameter("ma", ma) :
+                new ObjectParameter("ma", typeof(string));
+    
+            var sLParameter = sL.HasValue ?
+                new ObjectParameter("SL", sL) :
+                new ObjectParameter("SL", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("updateSL1", maParameter, sLParameter);
         }
     
         public virtual ObjectResult<uudaimoinhat1_Result> uudaimoinhat1(string maUD)
@@ -438,6 +443,19 @@ namespace BaiThucTap
                 new ObjectParameter("MaUD", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<uudaimoinhat1_Result>("uudaimoinhat1", maUDParameter);
+        }
+    
+        public virtual int xoactpn1(string maPN, string mats)
+        {
+            var maPNParameter = maPN != null ?
+                new ObjectParameter("maPN", maPN) :
+                new ObjectParameter("maPN", typeof(string));
+    
+            var matsParameter = mats != null ?
+                new ObjectParameter("mats", mats) :
+                new ObjectParameter("mats", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("xoactpn1", maPNParameter, matsParameter);
         }
     
         public virtual int xoancc(string mancc)

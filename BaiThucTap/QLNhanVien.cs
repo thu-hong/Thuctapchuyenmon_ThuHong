@@ -37,27 +37,7 @@ namespace BaiThucTap
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-            dataGridView1.AutoResizeColumns();
-            dataGridView1.AutoResizeRows();
-            txtMaNV.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-            txtTenNV.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-            if (dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString() == "Nam")
-            {
-                CheckboxNam.Checked = true;
-                CheckboxNu.Checked = false;
-            }
-            else
-            {
-                CheckboxNu.Checked = true;
-                CheckboxNam.Checked = false;
-            }
-            txtCMND.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-            txtDiaChi.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-            txtSDT.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-            cbchucvu.SelectedItem = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-
+        {           
         }
 
         private void btthem1_Click(object sender, EventArgs e)
@@ -164,6 +144,27 @@ namespace BaiThucTap
                 e.Handled = true;
         }
 
-      
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dataGridView1.AutoResizeColumns();
+            dataGridView1.AutoResizeRows();
+            txtMaNV.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txtTenNV.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            if (dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString() == "Nam")
+            {
+                CheckboxNam.Checked = true;
+                CheckboxNu.Checked = false;
+            }
+            else
+            {
+                CheckboxNu.Checked = true;
+                CheckboxNam.Checked = false;
+            }
+            txtCMND.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txtDiaChi.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+            txtSDT.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+            cbchucvu.SelectedItem = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+
+        }
     }
 }

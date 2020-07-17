@@ -34,12 +34,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnthemHD = new Bunifu.Framework.UI.BunifuFlatButton();
             this.cbkhachhang = new System.Windows.Forms.ComboBox();
             this.cbuser = new System.Windows.Forms.ComboBox();
             this.txttongtien = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnxuatpdf = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnthemHD = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnxuatexcel = new Bunifu.Framework.UI.BunifuFlatButton();
             this.cbmaud = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -54,21 +54,16 @@
             this.trangthai = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.xoa = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.maHDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tGLapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tongTienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.trangThaiDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.maUDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataSetHoaDon1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetHoaDon1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataSetHoaDon1 = new BaiThucTap.DataSetHoaDon();
+            this.dataSetHoaDon1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hoaDonTableAdapter1 = new BaiThucTap.DataSetHoaDonTableAdapters.HoaDonTableAdapter();
             this.moFile = new System.Windows.Forms.SaveFileDialog();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridview1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetHoaDon1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetHoaDon1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetHoaDon1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetHoaDon1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -76,7 +71,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(281, 9);
+            this.label1.Location = new System.Drawing.Point(283, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(251, 28);
             this.label1.TabIndex = 0;
@@ -85,12 +80,12 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox1.Controls.Add(this.btnthemHD);
             this.groupBox1.Controls.Add(this.cbkhachhang);
             this.groupBox1.Controls.Add(this.cbuser);
             this.groupBox1.Controls.Add(this.txttongtien);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btnxuatpdf);
-            this.groupBox1.Controls.Add(this.btnthemHD);
             this.groupBox1.Controls.Add(this.btnxuatexcel);
             this.groupBox1.Controls.Add(this.cbmaud);
             this.groupBox1.Controls.Add(this.label5);
@@ -103,8 +98,47 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
+            // btnthemHD
+            // 
+            this.btnthemHD.Activecolor = System.Drawing.Color.Transparent;
+            this.btnthemHD.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnthemHD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnthemHD.BorderRadius = 0;
+            this.btnthemHD.ButtonText = "THÊM HĐ";
+            this.btnthemHD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnthemHD.DisabledColor = System.Drawing.Color.Gray;
+            this.btnthemHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnthemHD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnthemHD.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnthemHD.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnthemHD.Iconimage")));
+            this.btnthemHD.Iconimage_right = null;
+            this.btnthemHD.Iconimage_right_Selected = null;
+            this.btnthemHD.Iconimage_Selected = null;
+            this.btnthemHD.IconMarginLeft = 0;
+            this.btnthemHD.IconMarginRight = 0;
+            this.btnthemHD.IconRightVisible = true;
+            this.btnthemHD.IconRightZoom = 0D;
+            this.btnthemHD.IconVisible = true;
+            this.btnthemHD.IconZoom = 90D;
+            this.btnthemHD.IsTab = false;
+            this.btnthemHD.Location = new System.Drawing.Point(114, 137);
+            this.btnthemHD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnthemHD.Name = "btnthemHD";
+            this.btnthemHD.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnthemHD.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnthemHD.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnthemHD.selected = false;
+            this.btnthemHD.Size = new System.Drawing.Size(122, 58);
+            this.btnthemHD.TabIndex = 72;
+            this.btnthemHD.Text = "THÊM HĐ";
+            this.btnthemHD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnthemHD.Textcolor = System.Drawing.Color.Blue;
+            this.btnthemHD.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnthemHD.Click += new System.EventHandler(this.btnthemHD_Click);
+            // 
             // cbkhachhang
             // 
+            this.cbkhachhang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cbkhachhang.FormattingEnabled = true;
             this.cbkhachhang.Location = new System.Drawing.Point(114, 61);
             this.cbkhachhang.Name = "cbkhachhang";
@@ -113,21 +147,24 @@
             // 
             // cbuser
             // 
+            this.cbuser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cbuser.FormattingEnabled = true;
             this.cbuser.Location = new System.Drawing.Point(114, 22);
             this.cbuser.Name = "cbuser";
             this.cbuser.Size = new System.Drawing.Size(173, 23);
             this.cbuser.TabIndex = 77;
+            this.cbuser.SelectedIndexChanged += new System.EventHandler(this.cbuser_SelectedIndexChanged);
             // 
             // txttongtien
             // 
+            this.txttongtien.BackColor = System.Drawing.Color.White;
             this.txttongtien.BorderColorFocused = System.Drawing.Color.Blue;
             this.txttongtien.BorderColorIdle = System.Drawing.Color.Black;
             this.txttongtien.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txttongtien.BorderThickness = 1;
             this.txttongtien.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txttongtien.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txttongtien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txttongtien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.txttongtien.isPassword = false;
             this.txttongtien.Location = new System.Drawing.Point(475, 56);
             this.txttongtien.Margin = new System.Windows.Forms.Padding(4);
@@ -149,10 +186,10 @@
             // btnxuatpdf
             // 
             this.btnxuatpdf.Activecolor = System.Drawing.Color.Transparent;
-            this.btnxuatpdf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnxuatpdf.BackColor = System.Drawing.Color.Gainsboro;
             this.btnxuatpdf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnxuatpdf.BorderRadius = 0;
-            this.btnxuatpdf.ButtonText = "Xuất pdf";
+            this.btnxuatpdf.ButtonText = "XUẤT PDF";
             this.btnxuatpdf.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnxuatpdf.DisabledColor = System.Drawing.Color.Gray;
             this.btnxuatpdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -169,66 +206,28 @@
             this.btnxuatpdf.IconVisible = true;
             this.btnxuatpdf.IconZoom = 90D;
             this.btnxuatpdf.IsTab = false;
-            this.btnxuatpdf.Location = new System.Drawing.Point(427, 147);
+            this.btnxuatpdf.Location = new System.Drawing.Point(475, 137);
             this.btnxuatpdf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnxuatpdf.Name = "btnxuatpdf";
-            this.btnxuatpdf.Normalcolor = System.Drawing.Color.White;
+            this.btnxuatpdf.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnxuatpdf.OnHovercolor = System.Drawing.Color.White;
-            this.btnxuatpdf.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnxuatpdf.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnxuatpdf.selected = false;
-            this.btnxuatpdf.Size = new System.Drawing.Size(132, 48);
+            this.btnxuatpdf.Size = new System.Drawing.Size(134, 58);
             this.btnxuatpdf.TabIndex = 73;
-            this.btnxuatpdf.Text = "Xuất pdf";
+            this.btnxuatpdf.Text = "XUẤT PDF";
             this.btnxuatpdf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnxuatpdf.Textcolor = System.Drawing.Color.Blue;
             this.btnxuatpdf.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnxuatpdf.Click += new System.EventHandler(this.btnxuatpdf_Click);
             // 
-            // btnthemHD
-            // 
-            this.btnthemHD.Activecolor = System.Drawing.Color.Transparent;
-            this.btnthemHD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnthemHD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnthemHD.BorderRadius = 0;
-            this.btnthemHD.ButtonText = "Thêm hóa đơn";
-            this.btnthemHD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnthemHD.DisabledColor = System.Drawing.Color.Gray;
-            this.btnthemHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthemHD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnthemHD.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnthemHD.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnthemHD.Iconimage")));
-            this.btnthemHD.Iconimage_right = null;
-            this.btnthemHD.Iconimage_right_Selected = null;
-            this.btnthemHD.Iconimage_Selected = null;
-            this.btnthemHD.IconMarginLeft = 0;
-            this.btnthemHD.IconMarginRight = 0;
-            this.btnthemHD.IconRightVisible = true;
-            this.btnthemHD.IconRightZoom = 0D;
-            this.btnthemHD.IconVisible = true;
-            this.btnthemHD.IconZoom = 90D;
-            this.btnthemHD.IsTab = false;
-            this.btnthemHD.Location = new System.Drawing.Point(70, 147);
-            this.btnthemHD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnthemHD.Name = "btnthemHD";
-            this.btnthemHD.Normalcolor = System.Drawing.Color.White;
-            this.btnthemHD.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnthemHD.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnthemHD.selected = false;
-            this.btnthemHD.Size = new System.Drawing.Size(141, 48);
-            this.btnthemHD.TabIndex = 72;
-            this.btnthemHD.Text = "Thêm hóa đơn";
-            this.btnthemHD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnthemHD.Textcolor = System.Drawing.Color.Blue;
-            this.btnthemHD.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthemHD.Click += new System.EventHandler(this.btnthemHD_Click);
-            // 
             // btnxuatexcel
             // 
             this.btnxuatexcel.Activecolor = System.Drawing.Color.Transparent;
-            this.btnxuatexcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnxuatexcel.BackColor = System.Drawing.Color.Gainsboro;
             this.btnxuatexcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnxuatexcel.BorderRadius = 0;
-            this.btnxuatexcel.ButtonText = "Xuất excel";
+            this.btnxuatexcel.ButtonText = "XUẤT EXCEL";
             this.btnxuatexcel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnxuatexcel.DisabledColor = System.Drawing.Color.Gray;
             this.btnxuatexcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -245,16 +244,16 @@
             this.btnxuatexcel.IconVisible = true;
             this.btnxuatexcel.IconZoom = 90D;
             this.btnxuatexcel.IsTab = false;
-            this.btnxuatexcel.Location = new System.Drawing.Point(261, 147);
+            this.btnxuatexcel.Location = new System.Drawing.Point(286, 137);
             this.btnxuatexcel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnxuatexcel.Name = "btnxuatexcel";
-            this.btnxuatexcel.Normalcolor = System.Drawing.Color.White;
+            this.btnxuatexcel.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnxuatexcel.OnHovercolor = System.Drawing.Color.White;
-            this.btnxuatexcel.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnxuatexcel.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnxuatexcel.selected = false;
-            this.btnxuatexcel.Size = new System.Drawing.Size(108, 48);
+            this.btnxuatexcel.Size = new System.Drawing.Size(142, 58);
             this.btnxuatexcel.TabIndex = 71;
-            this.btnxuatexcel.Text = "Xuất excel";
+            this.btnxuatexcel.Text = "XUẤT EXCEL";
             this.btnxuatexcel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnxuatexcel.Textcolor = System.Drawing.Color.Blue;
             this.btnxuatexcel.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -262,6 +261,7 @@
             // 
             // cbmaud
             // 
+            this.cbmaud.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cbmaud.FormattingEnabled = true;
             this.cbmaud.Location = new System.Drawing.Point(475, 19);
             this.cbmaud.Name = "cbmaud";
@@ -324,15 +324,8 @@
             this.maud,
             this.trangthai,
             this.username,
-            this.xoa,
-            this.maHDDataGridViewTextBoxColumn,
-            this.tGLapDataGridViewTextBoxColumn,
-            this.tongTienDataGridViewTextBoxColumn,
-            this.userNameDataGridViewTextBoxColumn,
-            this.trangThaiDataGridViewCheckBoxColumn,
-            this.maUDDataGridViewTextBoxColumn,
-            this.maKHDataGridViewTextBoxColumn});
-            this.dataGridview1.DataSource = this.dataSetHoaDon1BindingSource;
+            this.xoa});
+            this.dataGridview1.DataSource = this.dataSetHoaDon1BindingSource1;
             this.dataGridview1.DoubleBuffered = true;
             this.dataGridview1.EnableHeadersVisualStyles = false;
             this.dataGridview1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -394,57 +387,20 @@
             this.xoa.HeaderText = "Xóa";
             this.xoa.Name = "xoa";
             // 
-            // maHDDataGridViewTextBoxColumn
+            // dataSetHoaDon1BindingSource1
             // 
-            this.maHDDataGridViewTextBoxColumn.DataPropertyName = "MaHD";
-            this.maHDDataGridViewTextBoxColumn.HeaderText = "MaHD";
-            this.maHDDataGridViewTextBoxColumn.Name = "maHDDataGridViewTextBoxColumn";
-            // 
-            // tGLapDataGridViewTextBoxColumn
-            // 
-            this.tGLapDataGridViewTextBoxColumn.DataPropertyName = "TGLap";
-            this.tGLapDataGridViewTextBoxColumn.HeaderText = "TGLap";
-            this.tGLapDataGridViewTextBoxColumn.Name = "tGLapDataGridViewTextBoxColumn";
-            // 
-            // tongTienDataGridViewTextBoxColumn
-            // 
-            this.tongTienDataGridViewTextBoxColumn.DataPropertyName = "TongTien";
-            this.tongTienDataGridViewTextBoxColumn.HeaderText = "TongTien";
-            this.tongTienDataGridViewTextBoxColumn.Name = "tongTienDataGridViewTextBoxColumn";
-            // 
-            // userNameDataGridViewTextBoxColumn
-            // 
-            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
-            this.userNameDataGridViewTextBoxColumn.HeaderText = "UserName";
-            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
-            // 
-            // trangThaiDataGridViewCheckBoxColumn
-            // 
-            this.trangThaiDataGridViewCheckBoxColumn.DataPropertyName = "TrangThai";
-            this.trangThaiDataGridViewCheckBoxColumn.HeaderText = "TrangThai";
-            this.trangThaiDataGridViewCheckBoxColumn.Name = "trangThaiDataGridViewCheckBoxColumn";
-            // 
-            // maUDDataGridViewTextBoxColumn
-            // 
-            this.maUDDataGridViewTextBoxColumn.DataPropertyName = "MaUD";
-            this.maUDDataGridViewTextBoxColumn.HeaderText = "MaUD";
-            this.maUDDataGridViewTextBoxColumn.Name = "maUDDataGridViewTextBoxColumn";
-            // 
-            // maKHDataGridViewTextBoxColumn
-            // 
-            this.maKHDataGridViewTextBoxColumn.DataPropertyName = "MaKH";
-            this.maKHDataGridViewTextBoxColumn.HeaderText = "MaKH";
-            this.maKHDataGridViewTextBoxColumn.Name = "maKHDataGridViewTextBoxColumn";
-            // 
-            // dataSetHoaDon1BindingSource
-            // 
-            this.dataSetHoaDon1BindingSource.DataMember = "HoaDon";
-            this.dataSetHoaDon1BindingSource.DataSource = this.dataSetHoaDon1;
+            this.dataSetHoaDon1BindingSource1.DataSource = this.dataSetHoaDon1;
+            this.dataSetHoaDon1BindingSource1.Position = 0;
             // 
             // dataSetHoaDon1
             // 
             this.dataSetHoaDon1.DataSetName = "DataSetHoaDon";
             this.dataSetHoaDon1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataSetHoaDon1BindingSource
+            // 
+            this.dataSetHoaDon1BindingSource.DataMember = "HoaDon";
+            this.dataSetHoaDon1BindingSource.DataSource = this.dataSetHoaDon1;
             // 
             // hoaDonTableAdapter1
             // 
@@ -465,8 +421,9 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridview1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetHoaDon1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetHoaDon1BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetHoaDon1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetHoaDon1BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -499,13 +456,7 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn trangthai;
         private System.Windows.Forms.DataGridViewTextBoxColumn username;
         private System.Windows.Forms.DataGridViewButtonColumn xoa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maHDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tGLapDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tongTienDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn trangThaiDataGridViewCheckBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maUDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maKHDataGridViewTextBoxColumn;
         private Bunifu.Framework.UI.BunifuFlatButton btnxuatpdf;
+        private System.Windows.Forms.BindingSource dataSetHoaDon1BindingSource1;
     }
 }

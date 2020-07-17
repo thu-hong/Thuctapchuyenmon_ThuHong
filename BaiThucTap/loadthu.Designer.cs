@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loadthu));
             this.btThanhToan = new DevExpress.XtraEditors.SimpleButton();
             this.btLuu = new DevExpress.XtraEditors.SimpleButton();
             this.btThem = new DevExpress.XtraEditors.SimpleButton();
@@ -244,7 +245,9 @@
             // panelAnh
             // 
             this.panelAnh.AutoScroll = true;
-            this.panelAnh.Location = new System.Drawing.Point(15, 111);
+            this.panelAnh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panelAnh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelAnh.Location = new System.Drawing.Point(15, 12);
             this.panelAnh.Name = "panelAnh";
             this.panelAnh.Size = new System.Drawing.Size(599, 431);
             this.panelAnh.TabIndex = 6;
@@ -252,8 +255,10 @@
             // panelDanhMuc
             // 
             this.panelDanhMuc.AutoScroll = true;
+            this.panelDanhMuc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panelDanhMuc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelDanhMuc.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
-            this.panelDanhMuc.Location = new System.Drawing.Point(12, 12);
+            this.panelDanhMuc.Location = new System.Drawing.Point(12, 449);
             this.panelDanhMuc.Name = "panelDanhMuc";
             this.panelDanhMuc.Size = new System.Drawing.Size(602, 93);
             this.panelDanhMuc.TabIndex = 5;
@@ -305,6 +310,7 @@
             // 
             // panelMua
             // 
+            this.panelMua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panelMua.Controls.Add(this.btThanhToan);
             this.panelMua.Controls.Add(this.btLuu);
             this.panelMua.Controls.Add(this.btThem);
@@ -332,7 +338,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1140, 558);
             this.Controls.Add(this.panelAnh);
             this.Controls.Add(this.panelDanhMuc);

@@ -36,7 +36,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btxoa1 = new DevExpress.XtraEditors.SimpleButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.btthem1 = new DevExpress.XtraEditors.SimpleButton();
             this.btsua1 = new DevExpress.XtraEditors.SimpleButton();
             this.btthoat1 = new DevExpress.XtraEditors.SimpleButton();
@@ -56,6 +55,7 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -100,7 +100,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(101, 19);
+            this.dataGridView1.Location = new System.Drawing.Point(86, 19);
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -124,16 +124,6 @@
             this.btxoa1.TabIndex = 37;
             this.btxoa1.Text = "Xóa";
             this.btxoa1.Click += new System.EventHandler(this.btxoa1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tempus Sans ITC", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(261, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 24);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "QUẢN LÍ KHÁCH HÀNG";
             // 
             // btthem1
             // 
@@ -195,6 +185,7 @@
             // 
             // txtmakh
             // 
+            this.txtmakh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtmakh.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtmakh.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtmakh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -215,6 +206,7 @@
             // 
             // txttenkh
             // 
+            this.txttenkh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txttenkh.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txttenkh.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txttenkh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -235,6 +227,7 @@
             // 
             // txtdiachi
             // 
+            this.txtdiachi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtdiachi.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtdiachi.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtdiachi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -255,6 +248,7 @@
             // 
             // txtemail
             // 
+            this.txtemail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtemail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtemail.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtemail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -275,6 +269,7 @@
             // 
             // txtsdt
             // 
+            this.txtsdt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtsdt.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtsdt.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtsdt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -297,6 +292,7 @@
             // 
             // txtnhapmatim
             // 
+            this.txtnhapmatim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtnhapmatim.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtnhapmatim.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtnhapmatim.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -387,12 +383,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Khách Hàng";
             // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.Appearance.Options.UseForeColor = true;
+            this.labelControl7.Location = new System.Drawing.Point(296, 13);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(246, 24);
+            this.labelControl7.TabIndex = 46;
+            this.labelControl7.Text = "QUẢN LÝ KHÁCH HÀNG";
+            // 
             // QLKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(797, 450);
+            this.Controls.Add(this.labelControl7);
             this.Controls.Add(this.btluu);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btfile);
@@ -401,7 +411,6 @@
             this.Controls.Add(this.btthoat1);
             this.Controls.Add(this.btsua1);
             this.Controls.Add(this.btthem1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btxoa1);
             this.Controls.Add(this.groupBox1);
             this.Name = "QLKhachHang";
@@ -422,7 +431,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private DevExpress.XtraEditors.SimpleButton btxoa1;
-        private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.SimpleButton btthem1;
         private DevExpress.XtraEditors.SimpleButton btsua1;
         private DevExpress.XtraEditors.SimpleButton btthoat1;
@@ -442,5 +450,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private System.Windows.Forms.GroupBox groupBox1;
+        private DevExpress.XtraEditors.LabelControl labelControl7;
     }
 }

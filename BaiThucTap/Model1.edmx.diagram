@@ -4,27 +4,34 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="37c01be7c01b4d61934b335a1a28e432" Name="Diagram1">
-        <EntityTypeShape EntityType="quanlytrangsucModel.ChiTietHD" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.ChiTietPN" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.ChiTietUD" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.ChucVu" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.CTPhanQuyen" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.DangNhap" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.HoaDon" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.KhachHang" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.LoaiTrangSuc" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.LuongNgay" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.NhaCungCap" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.NhanVien" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.PhieuNhap" Width="1.5" PointX="8.75" PointY="7.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.Quyen" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.sysdiagram" Width="1.5" PointX="4.75" PointY="9.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.Thang" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.ThuongPhat" Width="1.5" PointX="10.75" PointY="6.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.TrangSuc" Width="1.5" PointX="6.75" PointY="10.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlytrangsucModel.UuDai" Width="1.5" PointX="8.75" PointY="10.75" IsExpanded="true" />
+      <Diagram DiagramId="0d94ace93fec4474adcf4adbf8077287" Name="Diagram1">
+        <EntityTypeShape EntityType="quanlytrangsucModel.ChiTietHD" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.ChiTietPN" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.ChiTietUD" Width="1.5" PointX="10.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.ChucVu" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.CTPhanQuyen" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.DangNhap" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.HoaDon" Width="1.5" PointX="10" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.KhachHang" Width="1.5" PointX="7.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.LoaiTrangSuc" Width="1.5" PointX="7.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.LuongNgay" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.NhaCungCap" Width="1.5" PointX="6" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.NhanVien" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.PhieuNhap" Width="1.5" PointX="8.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.Quyen" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.sysdiagram" Width="1.5" PointX="12.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.Thang" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.ThuongPhat" Width="1.5" PointX="5.25" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.TrangSuc" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytrangsucModel.UuDai" Width="1.5" PointX="7.75" PointY="12.75" IsExpanded="true" />
+        <AssociationConnector Association="quanlytrangsucModel.FK_NhanVien_ChucVu" ManuallyRouted="false" />
         <AssociationConnector Association="quanlytrangsucModel.FK_HoaDon_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlytrangsucModel.FK_TrangSuc_LoaiTrangSuc" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlytrangsucModel.FK_LuongNgay_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlytrangsucModel.FK_PhieuNhap_NhaCungCap" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlytrangsucModel.FK_PhieuNhap_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlytrangsucModel.FK_Thang_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlytrangsucModel.FK_ThuongPhat_NhanVien" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -25,7 +25,7 @@ namespace BaiThucTap
             //if( fd.ShowDialog()== DialogResult.OK)
             //{
             //    txtPath.text = fd.SelectedPath;
-
+        
             //}
         }
 
@@ -55,7 +55,7 @@ namespace BaiThucTap
                  connect.Open();
                 SqlCommand command;
 
-                command = new SqlCommand(@"BACKUP DATABASE[quanlytrangsuc] TO  DISK = 'C:\SQLBackup\Backup.bak'");
+                command = new SqlCommand(@"BACKUP DATABASE[quanlytrangsuc] TO  DISK = 'D:\Backup.bak'");
                 //command = new SqlCommand(@"Backup database qlthucung to disk ='e:\SQLBackup\BackUp.bak'", connect);
                 connect.Open();
                 command.ExecuteNonQuery();

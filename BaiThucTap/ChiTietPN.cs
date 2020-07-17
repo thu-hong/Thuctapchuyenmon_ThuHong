@@ -19,8 +19,6 @@ namespace BaiThucTap
         public Nullable<int> SoLuong { get; set; }
         public Nullable<double> GiaNhap { get; set; }
         public string MaLoai { get; set; }
-        public string TenTS { get; set; }
         public string DonVi { get; set; }
-        public byte[] Anh { get; set; }
     }
 }

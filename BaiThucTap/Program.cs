@@ -16,7 +16,8 @@ namespace BaiThucTap
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HangTon());
+            Application.Run(new Login());
+
         }
     }
 }

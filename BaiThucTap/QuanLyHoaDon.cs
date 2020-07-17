@@ -13,8 +13,7 @@ using System.IO;
 using Microsoft.Office.Interop.Excel;
 using iTextSharp.text.pdf;
 using iTextSharp.text;
-using System.Text;
-using System.ComponentModel;
+
 
 namespace BaiThucTap
 {
@@ -27,13 +26,14 @@ namespace BaiThucTap
         }
         private void loadhd()
         {
+            // để tránh các cột bị mất thứ tự sau khi gán cột
             dataGridview1.AutoGenerateColumns = false;
             dataGridview1.DataSource = trangsuc.HoaDons.ToList();
         }
 
         public bool kiemtra()
         {
-            if(cbkhachhang.Text==""|| cbuser.Text == "" || cbmaud.Text=="")
+            if(cbuser.Text==""|| cbmaud.Text == "" || cbkhachhang.Text=="")
             {
                 MessageBox.Show("Bạn Chưa nhập đủ thông tin");
                 return false;
@@ -50,7 +50,8 @@ namespace BaiThucTap
             {
                 return;
             }
-            trangsuc.themHD1(cbkhachhang.Text, cbmaud.Text, cbuser.Text);
+           
+            trangsuc.themHD3(cbuser.Text, cbmaud.SelectedValue.ToString(), cbkhachhang.SelectedValue.ToString());
             trangsuc.SaveChanges();
             MessageBox.Show("Thêm Hóa Đơn Thành Công ");
             QuanLyHoaDon_Load(sender, e);
@@ -64,7 +65,7 @@ namespace BaiThucTap
             cbuser.DisplayMember = "UserName";
             cbuser.ValueMember = "UserName";
         }
-        
+
         private void loadkh()
         {
             List<KhachHang> kh = trangsuc.KhachHangs.ToList();
@@ -252,6 +253,9 @@ namespace BaiThucTap
             f.ShowDialog();
         }
 
-       
+        private void cbuser_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -14,9 +14,18 @@ namespace BaiThucTap
     
     public partial class NhaCungCap
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public NhaCungCap()
+        {
+            this.PhieuNhaps = new HashSet<PhieuNhap>();
+        }
+    
         public string MaNCC { get; set; }
         public string TenNCC { get; set; }
         public string DiaChi { get; set; }
         public string SDT { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PhieuNhap> PhieuNhaps { get; set; }
     }
 }

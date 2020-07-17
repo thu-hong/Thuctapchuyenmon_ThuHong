@@ -14,6 +14,15 @@ namespace BaiThucTap
     
     public partial class NhanVien
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public NhanVien()
+        {
+            this.LuongNgays = new HashSet<LuongNgay>();
+            this.PhieuNhaps = new HashSet<PhieuNhap>();
+            this.Thangs = new HashSet<Thang>();
+            this.ThuongPhats = new HashSet<ThuongPhat>();
+        }
+    
         public string MaNV { get; set; }
         public string TenNV { get; set; }
         public Nullable<bool> GioiTinh { get; set; }
@@ -21,5 +30,15 @@ namespace BaiThucTap
         public string DiaChi { get; set; }
         public string SDT { get; set; }
         public string MaCV { get; set; }
+    
+        public virtual ChucVu ChucVu { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<LuongNgay> LuongNgays { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PhieuNhap> PhieuNhaps { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Thang> Thangs { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ThuongPhat> ThuongPhats { get; set; }
     }
 }

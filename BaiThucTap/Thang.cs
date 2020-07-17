@@ -17,6 +17,7 @@ namespace BaiThucTap
         public int Thang1 { get; set; }
         public string MaNV { get; set; }
         public Nullable<double> Luong { get; set; }
-        public Nullable<double> ThuongPhat { get; set; }
+    
+        public virtual NhanVien NhanVien { get; set; }
     }
 }

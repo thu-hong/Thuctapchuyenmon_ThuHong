@@ -58,7 +58,7 @@
             // 
             // txtmatim
             // 
-            this.txtmatim.BackColor = System.Drawing.SystemColors.Control;
+            this.txtmatim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.txtmatim.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtmatim.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtmatim.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -69,7 +69,7 @@
             this.txtmatim.LineIdleColor = System.Drawing.Color.Gray;
             this.txtmatim.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtmatim.LineThickness = 3;
-            this.txtmatim.Location = new System.Drawing.Point(138, 309);
+            this.txtmatim.Location = new System.Drawing.Point(502, 167);
             this.txtmatim.Margin = new System.Windows.Forms.Padding(4);
             this.txtmatim.Name = "txtmatim";
             this.txtmatim.Size = new System.Drawing.Size(205, 28);
@@ -84,7 +84,7 @@
             this.CheckboxNam.Checked = true;
             this.CheckboxNam.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.CheckboxNam.ForeColor = System.Drawing.Color.White;
-            this.CheckboxNam.Location = new System.Drawing.Point(253, 281);
+            this.CheckboxNam.Location = new System.Drawing.Point(258, 185);
             this.CheckboxNam.Name = "CheckboxNam";
             this.CheckboxNam.Size = new System.Drawing.Size(20, 20);
             this.CheckboxNam.TabIndex = 38;
@@ -96,7 +96,7 @@
             this.CheckboxNu.Checked = false;
             this.CheckboxNu.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.CheckboxNu.ForeColor = System.Drawing.Color.White;
-            this.CheckboxNu.Location = new System.Drawing.Point(160, 279);
+            this.CheckboxNu.Location = new System.Drawing.Point(165, 183);
             this.CheckboxNu.Name = "CheckboxNu";
             this.CheckboxNu.Size = new System.Drawing.Size(20, 20);
             this.CheckboxNu.TabIndex = 37;
@@ -105,14 +105,14 @@
             // 
             this.cbchucvu.BackColor = System.Drawing.SystemColors.Control;
             this.cbchucvu.FormattingEnabled = true;
-            this.cbchucvu.Location = new System.Drawing.Point(138, 240);
+            this.cbchucvu.Location = new System.Drawing.Point(502, 139);
             this.cbchucvu.Name = "cbchucvu";
             this.cbchucvu.Size = new System.Drawing.Size(207, 21);
             this.cbchucvu.TabIndex = 36;
             // 
             // txtCMND
             // 
-            this.txtCMND.BackColor = System.Drawing.SystemColors.Control;
+            this.txtCMND.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.txtCMND.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCMND.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtCMND.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -123,7 +123,7 @@
             this.txtCMND.LineIdleColor = System.Drawing.Color.Gray;
             this.txtCMND.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtCMND.LineThickness = 3;
-            this.txtCMND.Location = new System.Drawing.Point(139, 205);
+            this.txtCMND.Location = new System.Drawing.Point(503, 104);
             this.txtCMND.Margin = new System.Windows.Forms.Padding(4);
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(206, 28);
@@ -134,7 +134,7 @@
             // 
             // txtSDT
             // 
-            this.txtSDT.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.txtSDT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSDT.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtSDT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -145,7 +145,7 @@
             this.txtSDT.LineIdleColor = System.Drawing.Color.Gray;
             this.txtSDT.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtSDT.LineThickness = 3;
-            this.txtSDT.Location = new System.Drawing.Point(140, 166);
+            this.txtSDT.Location = new System.Drawing.Point(504, 65);
             this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(205, 30);
@@ -156,7 +156,7 @@
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDiaChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.txtDiaChi.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDiaChi.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -167,7 +167,7 @@
             this.txtDiaChi.LineIdleColor = System.Drawing.Color.Gray;
             this.txtDiaChi.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtDiaChi.LineThickness = 3;
-            this.txtDiaChi.Location = new System.Drawing.Point(138, 127);
+            this.txtDiaChi.Location = new System.Drawing.Point(143, 139);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(207, 31);
@@ -177,7 +177,7 @@
             // 
             // txtTenNV
             // 
-            this.txtTenNV.BackColor = System.Drawing.SystemColors.Control;
+            this.txtTenNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.txtTenNV.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTenNV.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtTenNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -188,7 +188,7 @@
             this.txtTenNV.LineIdleColor = System.Drawing.Color.Gray;
             this.txtTenNV.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtTenNV.LineThickness = 3;
-            this.txtTenNV.Location = new System.Drawing.Point(138, 89);
+            this.txtTenNV.Location = new System.Drawing.Point(143, 101);
             this.txtTenNV.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenNV.Name = "txtTenNV";
             this.txtTenNV.Size = new System.Drawing.Size(207, 30);
@@ -198,7 +198,7 @@
             // 
             // txtMaNV
             // 
-            this.txtMaNV.BackColor = System.Drawing.SystemColors.Control;
+            this.txtMaNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.txtMaNV.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMaNV.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtMaNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -209,7 +209,7 @@
             this.txtMaNV.LineIdleColor = System.Drawing.Color.Gray;
             this.txtMaNV.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtMaNV.LineThickness = 3;
-            this.txtMaNV.Location = new System.Drawing.Point(138, 53);
+            this.txtMaNV.Location = new System.Drawing.Point(143, 65);
             this.txtMaNV.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(207, 28);
@@ -220,7 +220,7 @@
             // bttimkiem1
             // 
             this.bttimkiem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bttimkiem1.ImageOptions.Image")));
-            this.bttimkiem1.Location = new System.Drawing.Point(293, 366);
+            this.bttimkiem1.Location = new System.Drawing.Point(464, 247);
             this.bttimkiem1.Name = "bttimkiem1";
             this.bttimkiem1.Size = new System.Drawing.Size(88, 37);
             this.bttimkiem1.TabIndex = 39;
@@ -230,7 +230,7 @@
             // btsua1
             // 
             this.btsua1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btsua1.ImageOptions.Image")));
-            this.btsua1.Location = new System.Drawing.Point(206, 366);
+            this.btsua1.Location = new System.Drawing.Point(377, 247);
             this.btsua1.Name = "btsua1";
             this.btsua1.Size = new System.Drawing.Size(81, 37);
             this.btsua1.TabIndex = 38;
@@ -240,7 +240,7 @@
             // btthem1
             // 
             this.btthem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btthem1.ImageOptions.Image")));
-            this.btthem1.Location = new System.Drawing.Point(119, 366);
+            this.btthem1.Location = new System.Drawing.Point(290, 247);
             this.btthem1.Name = "btthem1";
             this.btthem1.Size = new System.Drawing.Size(81, 37);
             this.btthem1.TabIndex = 37;
@@ -250,7 +250,7 @@
             // btxoa1
             // 
             this.btxoa1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btxoa1.ImageOptions.Image")));
-            this.btxoa1.Location = new System.Drawing.Point(28, 366);
+            this.btxoa1.Location = new System.Drawing.Point(199, 247);
             this.btxoa1.Name = "btxoa1";
             this.btxoa1.Size = new System.Drawing.Size(85, 37);
             this.btxoa1.TabIndex = 36;
@@ -259,89 +259,97 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(50, 68);
+            this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl1.Location = new System.Drawing.Point(42, 65);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(72, 13);
+            this.labelControl1.Size = new System.Drawing.Size(72, 28);
             this.labelControl1.TabIndex = 51;
             this.labelControl1.Text = "Mã Nhân Viên :";
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(50, 106);
+            this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl2.Location = new System.Drawing.Point(42, 105);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(76, 13);
+            this.labelControl2.Size = new System.Drawing.Size(76, 30);
             this.labelControl2.TabIndex = 52;
             this.labelControl2.Text = "Tên Nhân Viên :";
             // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(50, 145);
+            this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl3.Location = new System.Drawing.Point(44, 141);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(41, 13);
+            this.labelControl3.Size = new System.Drawing.Size(87, 31);
             this.labelControl3.TabIndex = 53;
             this.labelControl3.Text = "Địa Chỉ :";
             // 
             // labelControl4
             // 
-            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(50, 183);
+            this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl4.Location = new System.Drawing.Point(403, 65);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(27, 13);
+            this.labelControl4.Size = new System.Drawing.Size(83, 30);
             this.labelControl4.TabIndex = 54;
             this.labelControl4.Text = "SĐT :";
             // 
             // labelControl5
             // 
-            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(50, 220);
+            this.labelControl5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl5.Location = new System.Drawing.Point(401, 101);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(36, 13);
+            this.labelControl5.Size = new System.Drawing.Size(75, 28);
             this.labelControl5.TabIndex = 55;
             this.labelControl5.Text = "CMND :";
             // 
             // labelControl6
             // 
-            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.labelControl6.Appearance.Options.UseForeColor = true;
-            this.labelControl6.Location = new System.Drawing.Point(50, 248);
+            this.labelControl6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl6.Location = new System.Drawing.Point(403, 132);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(47, 13);
+            this.labelControl6.Size = new System.Drawing.Size(76, 28);
             this.labelControl6.TabIndex = 56;
             this.labelControl6.Text = "Chức Vụ :";
             // 
             // labelControl7
             // 
-            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.Location = new System.Drawing.Point(50, 274);
+            this.labelControl7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl7.Location = new System.Drawing.Point(42, 178);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(47, 13);
+            this.labelControl7.Size = new System.Drawing.Size(76, 34);
             this.labelControl7.TabIndex = 57;
             this.labelControl7.Text = "Giới Tính :";
             // 
             // labelControl8
             // 
-            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Location = new System.Drawing.Point(50, 309);
+            this.labelControl8.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl8.Location = new System.Drawing.Point(403, 167);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(49, 13);
+            this.labelControl8.Size = new System.Drawing.Size(83, 28);
             this.labelControl8.TabIndex = 58;
             this.labelControl8.Text = "Nhập Mã :";
             // 
             // labelControl9
             // 
-            this.labelControl9.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl9.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.labelControl9.Appearance.Options.UseForeColor = true;
-            this.labelControl9.Location = new System.Drawing.Point(279, 289);
+            this.labelControl9.Location = new System.Drawing.Point(284, 193);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(21, 13);
             this.labelControl9.TabIndex = 59;
@@ -349,9 +357,9 @@
             // 
             // labelControl10
             // 
-            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.labelControl10.Appearance.Options.UseForeColor = true;
-            this.labelControl10.Location = new System.Drawing.Point(186, 286);
+            this.labelControl10.Location = new System.Drawing.Point(191, 190);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(17, 13);
             this.labelControl10.TabIndex = 60;
@@ -359,13 +367,12 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Silver;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(468, 53);
+            this.dataGridView1.Location = new System.Drawing.Point(36, 328);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(451, 315);
-            this.dataGridView1.TabIndex = 24;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.Size = new System.Drawing.Size(733, 177);
+            this.dataGridView1.TabIndex = 61;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // QLNhanVien
             // 
@@ -374,7 +381,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(931, 533);
+            this.ClientSize = new System.Drawing.Size(814, 540);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.labelControl10);
             this.Controls.Add(this.labelControl9);
             this.Controls.Add(this.labelControl8);
@@ -389,7 +397,6 @@
             this.Controls.Add(this.btsua1);
             this.Controls.Add(this.btthem1);
             this.Controls.Add(this.btxoa1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtTenNV);
             this.Controls.Add(this.txtmatim);
             this.Controls.Add(this.txtMaNV);
@@ -399,7 +406,7 @@
             this.Controls.Add(this.CheckboxNu);
             this.Controls.Add(this.txtCMND);
             this.Controls.Add(this.cbchucvu);
-            this.ForeColor = System.Drawing.Color.White;
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "QLNhanVien";
             this.Text = "QLNhanVien";
             this.Load += new System.EventHandler(this.QLNhanVien_Load);
