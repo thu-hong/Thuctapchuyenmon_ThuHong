@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.txtten = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.txtMaNV = new System.Windows.Forms.TextBox();
             this.txtmatkhau = new System.Windows.Forms.TextBox();
             this.btthoat = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btdangnhap = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Checkbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,6 +85,51 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl4.Location = new System.Drawing.Point(14, 46);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(61, 33);
+            this.labelControl4.TabIndex = 35;
+            this.labelControl4.Text = "UserName :";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl3.Location = new System.Drawing.Point(14, 91);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(61, 29);
+            this.labelControl3.TabIndex = 34;
+            this.labelControl3.Text = "PassWord :";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl2.Location = new System.Drawing.Point(128, 133);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(100, 15);
+            this.labelControl2.TabIndex = 33;
+            this.labelControl2.Text = "Show password !!!";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(116, 15);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(126, 24);
+            this.labelControl1.TabIndex = 32;
+            this.labelControl1.Text = "ĐĂNG NHẬP";
+            // 
             // txtMaNV
             // 
             this.txtMaNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -111,7 +156,7 @@
             this.btthoat.ActiveFillColor = System.Drawing.Color.Blue;
             this.btthoat.ActiveForecolor = System.Drawing.Color.White;
             this.btthoat.ActiveLineColor = System.Drawing.Color.Blue;
-            this.btthoat.BackColor = System.Drawing.Color.White;
+            this.btthoat.BackColor = System.Drawing.SystemColors.Control;
             this.btthoat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btthoat.BackgroundImage")));
             this.btthoat.ButtonText = "Exit";
             this.btthoat.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -137,7 +182,7 @@
             this.btdangnhap.ActiveFillColor = System.Drawing.Color.Blue;
             this.btdangnhap.ActiveForecolor = System.Drawing.Color.White;
             this.btdangnhap.ActiveLineColor = System.Drawing.Color.Blue;
-            this.btdangnhap.BackColor = System.Drawing.Color.White;
+            this.btdangnhap.BackColor = System.Drawing.SystemColors.Control;
             this.btdangnhap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btdangnhap.BackgroundImage")));
             this.btdangnhap.ButtonText = "Login";
             this.btdangnhap.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -168,51 +213,6 @@
             this.Checkbox1.Size = new System.Drawing.Size(20, 20);
             this.Checkbox1.TabIndex = 26;
             this.Checkbox1.OnChange += new System.EventHandler(this.Checkbox1_OnChange);
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(116, 15);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(126, 24);
-            this.labelControl1.TabIndex = 32;
-            this.labelControl1.Text = "ĐĂNG NHẬP";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl2.Location = new System.Drawing.Point(128, 133);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(100, 15);
-            this.labelControl2.TabIndex = 33;
-            this.labelControl2.Text = "Show password !!!";
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl3.Location = new System.Drawing.Point(14, 91);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(61, 29);
-            this.labelControl3.TabIndex = 34;
-            this.labelControl3.Text = "PassWord :";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl4.Location = new System.Drawing.Point(14, 46);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(61, 33);
-            this.labelControl4.TabIndex = 35;
-            this.labelControl4.Text = "UserName :";
             // 
             // Login
             // 
