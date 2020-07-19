@@ -1,11 +1,10 @@
-Họ tên: Nguyễn Thị Thu Hồng
-Mã sinh viên: 5851071025
-Lớp:
+Họ tên: Nguyễn Thị Thu Hồng  
+Mã sinh viên: 5851071025  
+Lớp: Công nghệ thông tin  
 ## Đề tài: Quản lý cửa hàng bán trang sức
 ## Phần 1: Công nghệ sử dụng
 - Winform c#, Bunifu, Dexpress
-- SQL server
-...
+- SQL server  
 ## Phần 2: Các chức năng đã hoàn thành
 1.	Quản lý trang sức
 2.	Quản lý nhân viên (phân quyền)
@@ -17,30 +16,24 @@ Lớp:
 8.	Chat với khách hàng
 9.	Gửi ưu đãi mới qua mail cho khách hàng
 10.	Liên kết facebook , zalo
-11.	Đóng gói sản phẩm 
-11.	
-...
+11.	Đóng gói sản phẩm  
 ## Phần 3: Các chức năng chưa hoàn thành
-1. Báo cáo thống kê theo quý và tuần 
-
-...
+1. Báo cáo thống kê theo quý và tuần  
 ## Hướng dẫn sử dụng
--Bước 1 :Đăng nhập vào 
-  vd: như NV01, UserName: Giám Đốc ,pass: 1234
-
--Bước 2 : chọn vào những chức năng của trang 
-	Lưu ý : Đối với nhân viên  bán hàng:
+1. Đăng nhập vào 
+ > vd: như NV01, UserName: Giám Đốc ,pass: 1234
+2. Chọn vào những chức năng của trang    
+	Lưu ý : Đối với nhân viên  bán hàng:  
 + Quản lý trang sức 
 + Quản lý khách hàng 
 + Quản lý hóa đơn
-+ Liên hệ gmail với khách hàng 
-	Đối với kế toán:
++ Liên hệ gmail với khách hàng    
+	Đối với kế toán:  
 + Quản lý trang sức 
 + Quản lý khách hàng
-+ Quản lý hóa đơn
 + Quản lý nhập hàng
 + Quản lý tồn kho
 + Quản lý doanh thu
--	Đối với quản lý : Thực hiện được tất cả các chức năng có trong hệ thống 
+3. Đối với quản lý: Thực hiện được tất cả các chức năng có trong hệ thống 
 
 Xin cám ơn!
