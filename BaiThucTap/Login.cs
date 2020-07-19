@@ -54,13 +54,13 @@ namespace BaiThucTap
 
         private void Checkbox1_OnChange(object sender, EventArgs e)
         {
-            if (Checkbox1.Checked == false)
+            if (Checkbox1.Checked == true)
             {
-                txtmatkhau.UseSystemPasswordChar = true;
+                txtmatkhau.UseSystemPasswordChar = false;
             }
             else
             {
-                txtmatkhau.UseSystemPasswordChar = false;
+                txtmatkhau.UseSystemPasswordChar = true;
             }
         }
 

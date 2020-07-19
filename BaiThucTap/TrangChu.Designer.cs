@@ -41,7 +41,6 @@
             this.QuanLyTrangSuc = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.QuanLyKhachHang = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.QuanLyHoaDon = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.DongGoiSanPham = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.NhanVien = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.QuanLyNhanVien = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.NhapHang = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -156,8 +155,7 @@
             this.DanhMuc.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.QuanLyTrangSuc,
             this.QuanLyKhachHang,
-            this.QuanLyHoaDon,
-            this.DongGoiSanPham});
+            this.QuanLyHoaDon});
             this.DanhMuc.Expanded = true;
             this.DanhMuc.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
@@ -187,13 +185,6 @@
             this.QuanLyHoaDon.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.QuanLyHoaDon.Text = "Hóa Đơn";
             this.QuanLyHoaDon.Click += new System.EventHandler(this.QuanLyHoaDon_Click);
-            // 
-            // DongGoiSanPham
-            // 
-            this.DongGoiSanPham.Name = "DongGoiSanPham";
-            this.DongGoiSanPham.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.DongGoiSanPham.Text = "Đóng Gói Sản Phẩm";
-            this.DongGoiSanPham.Click += new System.EventHandler(this.DongGoiSanPham_Click);
             // 
             // NhanVien
             // 
@@ -356,7 +347,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private DevExpress.XtraBars.Navigation.AccordionControlElement LienHeGmail;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement DongGoiSanPham;
         private System.Windows.Forms.Label lbMaNV;
         private System.Windows.Forms.PictureBox hinhFb;
         private System.Windows.Forms.PictureBox hinhZalo;

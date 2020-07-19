@@ -25,20 +25,7 @@ namespace BaiThucTap
 
 
         string quyen = "";
-        private void DongGoiSanPham_Click(object sender, EventArgs e)
-        {
-            if (!quyen.Contains("Q04"))
-            {
-                MessageBox.Show("Bạn Không có quyền");
-                return;
-            }
-            else
-            {
-                DongGoiDuLieu f9 = new DongGoiDuLieu();
-                f9.ShowDialog();
-            }
-            
-        }
+       
 
         private void TrangChu_Load(object sender, EventArgs e)
         {
