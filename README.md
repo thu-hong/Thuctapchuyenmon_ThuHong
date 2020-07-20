@@ -21,6 +21,7 @@ Lớp: Công nghệ thông tin
 ## Phần 3: Các chức năng chưa hoàn thành
 1. Báo cáo thống kê theo quý và tuần  
 ## Hướng dẫn sử dụng
+- Thầy tải CSDL em vào nha 
 1. Đăng nhập vào 
  > vd: như NV01, UserName: Giám Đốc ,pass: 1234
 2. Chọn vào những chức năng của trang  
