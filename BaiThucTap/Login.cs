@@ -12,6 +12,10 @@ namespace BaiThucTap
 {
     public partial class Login : Form
     {
+        public class tranferData
+        {
+
+        }
         public Login()
         {
             InitializeComponent();  
@@ -25,6 +29,7 @@ namespace BaiThucTap
             using (quanlytrangsucEntities1 trangsuc= new quanlytrangsucEntities1())
             {
                 List<DangNhap> list = trangsuc.DangNhaps.ToList();
+                
                 DangNhap dn = trangsuc.DangNhaps.FirstOrDefault(p => p.UserName.Trim() == txtten.Text && p.PassWord.Trim() == txtmatkhau.Text && p.MaNV.Trim()==txtMaNV.Text );
                 if (dn != null)
                 {

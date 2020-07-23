@@ -110,7 +110,14 @@ namespace BaiThucTap
             cbLoaiTS.ValueMember = "MaLoai";
 
         }
-
+       
+        private void LoadKH()
+        {
+            List<KhachHang> kh = trangsuc.KhachHangs.ToList();
+            cbKH.DataSource = kh;
+            cbKH.DisplayMember = "TenKH";
+            cbKH.ValueMember = "MaKH";
+        }
         void Loaddanhmuc()
         {
             panelDanhMuc.Controls.Clear();
@@ -197,12 +204,21 @@ namespace BaiThucTap
                 }
             }
         }
+        private void uudai()
+        {
+            List<UuDai> ud = trangsuc.UuDais.ToList();
+            txtUuDai.DataSource = ud;
+            txtUuDai.DisplayMember = "TenUD";
+            txtUuDai.ValueMember = "MaUD";
+        }
 
         private void loadthu_Load(object sender, EventArgs e)
         {
             Loadloaitrangsuc();
             Loaddanhmuc();
             Loadtrangsuc("ML01");
+            LoadKH();
+            uudai();
             dataGridView1.Rows.Clear();
             List<getmahd2_Result> kq = trangsuc.getmahd2().ToList();         
             foreach (var item in kq)
@@ -239,7 +255,7 @@ namespace BaiThucTap
             }
             float dongia = float.Parse(txtDonGia.Text);
             int soluong = int.Parse(txtSoLuong.Value.ToString());
-            int uudai = int.Parse(txtUuDai.Text);
+            //int uudai = int.Parse(txtUuDai.Text);
             for(int i=0; i < dataGridView1.Rows.Count; i++)
             {
                 string loaitrangsuc = dataGridView1.Rows[i].Cells["loaitrangsuc"].Value.ToString();
@@ -254,7 +270,7 @@ namespace BaiThucTap
                 }
             }
             float tongtien = dongia * soluong;
-            dataGridView1.Rows.Add(new object[]  {mats,txtTenTS.Text,cbLoaiTS.Text,txtSoLuong.Value.ToString(),txtDonGia.Text,tongtien });
+            dataGridView1.Rows.Add(new object[]  {mats,txtTenTS.Text,cbLoaiTS.Text,txtUuDai.SelectedValue,cbKH.SelectedValue,txtSoLuong.Value.ToString(),txtDonGia.Text,tongtien });
 
         }
         public void reset()
@@ -274,6 +290,7 @@ namespace BaiThucTap
         }
         private void btLuu_Click(object sender, EventArgs e)
         {
+            lbtest.Text = txtUuDai.SelectedValue.ToString();
             if (dataGridView1.Rows.Count == 0)
             {
                 return;
@@ -293,6 +310,8 @@ namespace BaiThucTap
             {
                 hd = new HoaDon();
                 hd.MaHD = txtMaHD.Text;
+                hd.MaKH = cbKH.SelectedValue.ToString();
+                hd.MaUD = txtUuDai.SelectedValue.ToString();
                 hd.UserName = "Giám Đốc";
                 hd.TGLap = DateTime.Now.Date;
                 hd.TrangThai = false;
